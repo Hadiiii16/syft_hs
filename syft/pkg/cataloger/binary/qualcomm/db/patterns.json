@@ -1,0 +1,94 @@
+[
+  {
+    "pattern": "/qsdk/build_dir/[^/]+/[^/]+/qca-",
+    "field": "build_path",
+    "confidence": 0.9,
+    "note": "QSDK 내 qca-* 패키지 경로만 매칭"
+  },
+  {
+    "pattern": "qca-nss-ecm-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qca-wifi-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qca-nss-clients-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qca-nss-drv-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qca-nss-crypto-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qca-nss-dp-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qca-nss-cfi-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qca-hyfi-bridge-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qca-ovsmgr-g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "linux-ipq_ipq[0-9]+",
+    "field": "platform",
+    "confidence": 0.5,
+    "note": "IPQ 플랫폼 확인용 (단독으로는 낮은 신뢰도)"
+  },
+  {
+    "pattern": "QCA_PLC_SON|QCA_MAP_SERVICE|QCA_NON_SON",
+    "field": "supplier_confirm",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qcawifi_ops|qcawifi_",
+    "field": "supplier_confirm",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "QCA Hy-Fi",
+    "field": "supplier_confirm",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "libqcasonmemdebug",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "nl80211_vendor_event_qca",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "qca808x_|qca9984|qca9888|qca6390",
+    "field": "chipset",
+    "confidence": 0.85
+  },
+  {
+    "pattern": "msm8994|msm8992|msm8996",
+    "field": "chipset",
+    "confidence": 0.8
+  }
+]

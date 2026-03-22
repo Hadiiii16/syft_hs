@@ -38,6 +38,7 @@ import (
 	"github.com/anchore/syft/syft/pkg/cataloger/swipl"
 	"github.com/anchore/syft/syft/pkg/cataloger/terraform"
 	"github.com/anchore/syft/syft/pkg/cataloger/wordpress"
+	qualcommbinary "github.com/anchore/syft/syft/pkg/cataloger/binary/qualcomm"
 )
 
 const (
@@ -180,6 +181,14 @@ func DefaultPackageTaskFactories() Factories {
 		newSimplePackageTaskFactory(conda.NewCondaMetaCataloger, pkgcataloging.DirectoryTag, pkgcataloging.InstalledTag, pkgcataloging.PackageTag, "conda"),
 		newSimplePackageTaskFactory(snap.NewCataloger, pkgcataloging.DirectoryTag, pkgcataloging.InstalledTag, pkgcataloging.ImageTag, "snap"),
 		newSimplePackageTaskFactory(ai.NewGGUFCataloger, pkgcataloging.DirectoryTag, pkgcataloging.ImageTag, "ai", "model", "gguf", "ml"),
+		// HS add Qualcomm binary cataloger for .so/.ko files, which are common in Qualcomm's commercial products (e.g., Snapdragon SoCs)
+		newSimplePackageTaskFactory(qualcommbinary.NewCataloger,
+            pkgcataloging.InstalledTag,
+            pkgcataloging.ImageTag,
+            pkgcataloging.DirectoryTag,
+            "binary",
+            "qualcomm",
+        ),
 
 		// deprecated catalogers ////////////////////////////////////////
 		// these are catalogers that should not be selectable other than specific inclusion via name or "deprecated" tag (to remain backwards compatible)

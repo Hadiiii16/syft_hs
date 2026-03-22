@@ -1,0 +1,362 @@
+{
+  "a954901841815b33576532bb3159990ce6f2e55d64437606bb5ddfad320729cc": {
+    "name": "qca-iot-diag",
+    "version": "qca-IOT-g_unknown",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libdiag_demo.so"
+  },
+  "36aa53667396a7178da0dd7573539fd3a4cf1ea7d25f1e62c7a1624ccdea5e02": {
+    "name": "libdsutils",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libdsutils.so"
+  },
+  "39b5463cf58a290bdefdc9cdf4445db71688adbc49805ad306e5ee1c4da37e4b": {
+    "name": "qca-hyfi-bridge",
+    "version": "gef1fed0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libhyfi-bridge.so"
+  },
+  "b675401b3f1c53a9d666201a343ea1591aace1bbbc5bbcb768553b6885ecfb1e": {
+    "name": "qca-hyfi-common",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libhyficommon.so"
+  },
+  "8a5b7b2a12dabb57cc617ce71b68066502793f229a5745f32bbb56591800ac8a": {
+    "name": "qca-ieee1905",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libieee1905.so"
+  },
+  "3592c2c9b97fb794582f1b7b0b1606a8d19cd3b2329583e61f653d9b19dfe4e8": {
+    "name": "libiwinfo",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libiwinfo.so"
+  },
+  "12418e6efeb16f8bc871380087f2b4ec82b17eceecbe01901ddf8b21f5e2f5ff": {
+    "name": "qca-lbcmn",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/liblbcmnlibs.so"
+  },
+  "6299e00b17d4b05d9e7218f530f18199a24bbaca701dae063aa2fa0fb232914e": {
+    "name": "qca-son-memdebug",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libqcasonmemdebug.so"
+  },
+  "64d3f20aaed0892ae523c6da3402317962edc2fe3a82889ac5dbcdf5661cd13f": {
+    "name": "qca-storage",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libstorage.so"
+  },
+  "cc7c42195539d7d11925549dd7ae9811bba032e36c373935f7784b32aa562741": {
+    "name": "qca-wifison-cfg",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libwifisoncfg.so"
+  },
+  "e18c03dcfc6828e45cf0c8ddfd033a26204c8e6e275d52b765916ef078ed310d": {
+    "name": "qca-wpa2",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./usr/lib/libwpa2.so"
+  },
+  "236931a32060dbb3d13cd344973b40daf053f09aba6284e5debb0a452e0a71ec": {
+    "name": "qca-wifi",
+    "version": "g5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca_ol.ko"
+  },
+  "4eb62a6bf6b648f3f5ccd58e93c3333d29665877e7a447bdc4f03761f6d5d04a": {
+    "name": "qca-nss-clients",
+    "version": "g0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-qdisc.ko"
+  },
+  "8fbb9c4dbdf70d842d3e2d8036fb014772b776fe9a07a9f89773f835ae2d0004": {
+    "name": "qca-hyfi-bridge",
+    "version": "gef1fed0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/hyfi-bridging.ko"
+  },
+  "c5faf5e3843fb2d5ca1dd273448bdc8a72584fe7a1f8b835c50d4c58e7aa64a8": {
+    "name": "qca-nss-pppoe",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-pppoe.ko"
+  },
+  "08ef76314255675b96348c7388af00979ed34745cb10ca5b3ad803102df8dd5b": {
+    "name": "rmnet_nss",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/rmnet_nss.ko"
+  },
+  "4c51c8812319af29d31d69c4e19e2653ea92ec3c525c86d2fa1a5436d40713d7": {
+    "name": "qca-nss-macsec",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-macsec.ko"
+  },
+  "679995fdca657a5512dedd01b0cb07fc382151fc6250a1e277097808876c6d58": {
+    "name": "qca-nss-dp",
+    "version": "gd861db2",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-dp.ko"
+  },
+  "6c0fee075dcd427c1898be16130bb62bbcb1f57c530efe8200777d0e86941c1b": {
+    "name": "qca-nss-drv",
+    "version": "g51233b5",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-drv.ko"
+  },
+  "602db33b7912df843d37c9142ae7a6c48e2772ab1c559e7d3ea6ee6c561558d5": {
+    "name": "qca-wifi",
+    "version": "g5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/wifi_2_0.ko"
+  },
+  "c36309489a369de4cebbe50959b872436c68471af1c8131285522e3e0f26de23": {
+    "name": "qca-nss-gre-test",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-gre-test.ko"
+  },
+  "ad5bc1fff6404642e2813e20c7b000aa5c306ec68ce00a8a31102d9e880ef63a": {
+    "name": "qca-nss-cfi",
+    "version": "gee38547",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-cfi-cryptoapi.ko"
+  },
+  "69d726fdbd80200a746ee05e6bfe3141ece9706c6ac68d358f556678cb796ed4": {
+    "name": "qca-nss-ipsec-klips",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-ipsec-klips.ko"
+  },
+  "d82110a30b450a7c851c5b1a90b260037ebc1ca89cc2c5042f113d8d21a742b4": {
+    "name": "qca-wifi-umac",
+    "version": "g5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/umac.ko"
+  },
+  "cef16998f9131f718f96ef28a5b5074551176b94e5d58192402b0301b41d9fcd": {
+    "name": "qca-nss-clients",
+    "version": "g0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-netlink.ko"
+  },
+  "c2fa6f70e500e3c1f6ceb77742037b51c4b3fc0da6b6dfbbe4cb8060db5cd919": {
+    "name": "qca-asf",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/asf.ko"
+  },
+  "e88487e81851fb42f80783eb6af6313d30c7375d508594dbefc8c58f26105be0": {
+    "name": "qca-nss-clients",
+    "version": "g0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-l2tpv2.ko"
+  },
+  "3a3487de3ecac832cb6e13efe484f2c53fd456a2d7ee5b441e3dbba435ef8ead": {
+    "name": "qca-nss-crypto",
+    "version": "gd84a796",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-crypto.ko"
+  },
+  "d3f63bab68110033961e72d96b019ece5eb41bbcbe886a13ed070d0d38c7c709": {
+    "name": "phy-msm-ssusb-qmp",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/phy-msm-ssusb-qmp.ko"
+  },
+  "e79abf2d6efafd60470cf7e3f8f2153d25181249e9211e4038cc48e530a6a29b": {
+    "name": "qca-wifi",
+    "version": "g5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/wifi_3_0.ko"
+  },
+  "e7e3094a989a6716f7ec22e6c5088fb2d82fe9b199f2b97e3004fef3daef4440": {
+    "name": "qca-nss-clients",
+    "version": "g0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-bridge-mgr.ko"
+  },
+  "c6aab791a4c1ccaefc14a3e32834c8a58e20c2b222c9633d94fafc33baeb675d": {
+    "name": "qca-nss-pptp",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-pptp.ko"
+  },
+  "f66385ebd949082d020cc4ce3ad64ecadee3757043a4a6a50fb9d437b8f0b9ee": {
+    "name": "qca-nss-ecm",
+    "version": "g6294dc4",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/ecm.ko"
+  },
+  "4753659bfcaa833aa7f664d842f3970af0978cbb07a10d0b75e5ac4255fb0074": {
+    "name": "qca-mcs",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-mcs.ko"
+  },
+  "a327801b4a7f4e96808f9bde30686aa634e03e09469c3b9a7031bb43aa3c70dd": {
+    "name": "qca-nss-mscs",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-mscs.ko"
+  },
+  "46aa12a529835cd79b1d6e78634eb97e8dc28e26953e246ffa1f1fd5dcdf551a": {
+    "name": "qca-nss-crypto",
+    "version": "gd84a796",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-crypto-tool.ko"
+  },
+  "fa2e34bfe95a3563b1e63434e406b20080839753d2872990809290c40403dbd5": {
+    "name": "qca-nss-ovpn-link",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-ovpn-link.ko"
+  },
+  "a133a694e3a9f2e5bc022d81fca0c06c0557120bfabd9ea833c5518ffdf70e80": {
+    "name": "qca-nss-clients",
+    "version": "g0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-vxlanmgr.ko"
+  },
+  "ee70242a85c06cc7c77fbb62061b9654a24147c3120b4239156068632553e5de": {
+    "name": "qmi_sample_client",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qmi_sample_client.ko"
+  },
+  "f4355e63eb3be144e622ce0d7c3875783e3a8a184c6c38d5dc8cc46ca7bfeb62": {
+    "name": "qca-nss-map-t",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-map-t.ko"
+  },
+  "5fe2e0c20134ac37c00ea4d1c5dc071b24066ce55fd725ae5690e63bc2da9582": {
+    "name": "qca-mhi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/mhitest_mod.ko"
+  },
+  "57057fd63b4e32fa9c7eeb9049154206daa570a64c2b063c7155b8bb88845ff9": {
+    "name": "qca-nss-clients",
+    "version": "g0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-gre.ko"
+  },
+  "25229f71eee61022b7be4ee6395cddab27b8c9ecee42b7c65731ba67214e9ff5": {
+    "name": "qca-diag",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/diagchar.ko"
+  },
+  "daf9d5156fdb94ee270614175ba1a15378ac6564804fbe1b8b4f636f79b126e5": {
+    "name": "qca-smart-antenna",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/smart_antenna.ko"
+  },
+  "5cfa874a0855286895a3009cd096aa2ad1d4bb1541d2bea8d3f07b4cd2ec1e16": {
+    "name": "qca-nss-match",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-match.ko"
+  },
+  "475474d197ddcb4c367c13582b5c04b099d163e562d6318d200f5364dcbc5767": {
+    "name": "qca-nss-ecm-ovs",
+    "version": "g6294dc4",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/ecm_ovs.ko"
+  },
+  "5d09e137609074ee1663446e6686a45f5b6d2b7899f387147a98ab710d86e870": {
+    "name": "qca-nss-clients",
+    "version": "g0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-vlan.ko"
+  },
+  "82cc76c4abae5577be45dad8beb59aec30fa5f62cec6d01213970214ce5f5d50": {
+    "name": "qca-nss-tunipip6",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-tunipip6.ko"
+  },
+  "af00d72454330dbc8ca9c46cb5db5ec5e954b6477fe758353c52cdd1f8919b6e": {
+    "name": "qca-nss-mirror",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-mirror.ko"
+  },
+  "7ddadee18f317d05c7a3b1247e5160cfbf7022c5e2543d9e22998415276ee500": {
+    "name": "qca-nss-lag-mgr",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-lag-mgr.ko"
+  },
+  "a12f6fd787e7979acf83cbe23b338f1690fd561a914c02da3f1c7dca90639624": {
+    "name": "qca-nss-tun6rd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-tun6rd.ko"
+  },
+  "893d744093c72d6e71a8bb1900b1abbaddff7eb99d1c3b2f01216426517e1d0a": {
+    "name": "qca-wifi",
+    "version": "g5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca_spectral.ko"
+  },
+  "065556866740c1548292aa4eb0f94c182e854892a5520f825cc3725ab05aba4d": {
+    "name": "qca-ovsmgr",
+    "version": "g5eed1c7",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-ovsmgr.ko"
+  },
+  "e049179b99f6bc5cc47597b47781035a64db0adcc9fa07e942d9d8aa30142c2c": {
+    "name": "qca-ssdk",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-ssdk.ko"
+  },
+  "ae24d43bc49650bda684dbcb7d908c82a6f835f1673c9da95e51e3b718f71b8a": {
+    "name": "qca-nss-cfi",
+    "version": "gee38547",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-cfi-ocf.ko"
+  },
+  "c4b45d4ba22542af48ecc9521333ae4062a9857c11b89afc2b0d6f6d80877867": {
+    "name": "qca-wifi-qdf",
+    "version": "g5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qdf.ko"
+  },
+  "9392eef84cd4877f12840874c78862627f6108537bdd438aacf4929f4666a12b": {
+    "name": "qca-nss-clients",
+    "version": "g0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-ipsecmgr.ko"
+  },
+  "085f9a34de89d5152473d57db3457a740b03e8522f4170eb9fc3723eb75b0510": {
+    "name": "qca-nss-ovpn-mgr",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/qca-nss-ovpn-mgr.ko"
+  },
+  "a9ff6c01f0d33cbb345fa2f02f836431f4145e67b2ff0afc6d1d617da1c57a11": {
+    "name": "phy-msm-qusb",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/phy-msm-qusb.ko"
+  },
+  "f61185666afb633b138c1ef9ac59b87d12bc7e769bc26a392d646eaa11e143d7": {
+    "name": "qca-emesh-sp",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "file": "./lib/modules/4.4.60/emesh-sp.ko"
+  }
+}

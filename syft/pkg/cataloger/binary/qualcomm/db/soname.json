@@ -1,0 +1,13 @@
+{
+  "libdiag_demo.so":     {"name": "qca-iot-diag"},
+  "libdsutils.so":       {"name": "libdsutils"},
+  "libhyfi-bridge.so":   {"name": "qca-hyfi-bridge"},
+  "libhyficommon.so":    {"name": "qca-hyfi-common"},
+  "libieee1905.so":      {"name": "qca-ieee1905"},
+  "libiwinfo.so":        {"name": "libiwinfo"},
+  "liblbcmnlibs.so":     {"name": "qca-lbcmn"},
+  "libqcasonmemdebug.so":{"name": "qca-son-memdebug"},
+  "libstorage.so":       {"name": "qca-storage"},
+  "libwifisoncfg.so":    {"name": "qca-wifison-cfg"},
+  "libwpa2.so":          {"name": "qca-wpa2"}
+}
