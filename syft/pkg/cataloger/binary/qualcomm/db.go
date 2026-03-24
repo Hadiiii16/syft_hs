@@ -24,17 +24,26 @@ type sonameEntry struct {
 	Name string `json:"name"`
 }
 
-type patternEntry struct {
-	Pattern    string  `json:"pattern"`
-	Field      string  `json:"field"`
-	Confidence float64 `json:"confidence"`
-	Note       string  `json:"note,omitempty"`
+// type patternEntry struct {
+// 	Pattern    string  `json:"pattern"`
+// 	Field      string  `json:"field"`
+// 	Confidence float64 `json:"confidence"`
+// 	Note       string  `json:"note,omitempty"`
+// }
+
+type CompositePattern struct {
+	RuleName   string   `json:"rule_name"`
+	Field      string   `json:"field"`
+	Patterns   []string `json:"patterns"`
+	MinMatch   int      `json:"min_match"`
+	Confidence float64  `json:"confidence"`
+	Note       string   `json:"note"`
 }
 
 type signatureDB struct {
 	HashDB   map[string]hashEntry
 	SONAME   map[string]sonameEntry
-	Patterns []patternEntry
+	Patterns []CompositePattern
 }
 
 var (

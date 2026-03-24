@@ -20,32 +20,78 @@ type matchResult struct {
 	Evidence   []string
 }
 
+// // JSON에서 파싱될 복합 룰(YARA Style) 구조체
+// type CompositePattern struct {
+// 	RuleName   string   `json:"rule_name"`
+// 	Field      string   `json:"field"`
+// 	Patterns   []string `json:"patterns"`
+// 	MinMatch   int      `json:"min_match"`
+// 	Confidence float64  `json:"confidence"`
+// 	Note       string   `json:"note"`
+// }
+
+// 성능 최적화를 위해 미리 컴파일해 둔 정규식 컨테이너
+type compiledRule struct {
+	Rule    CompositePattern
+	Regexps []*regexp.Regexp
+}
+
 type Matcher struct {
-	db      *signatureDB
-	regexps []*regexp.Regexp
+	db    *signatureDB
+	rules []compiledRule
 }
 
 func newMatcher() (*Matcher, error) {
 	db := loadDB()
-	if dbLoadErr != nil {
-		return nil, dbLoadErr
+	if db == nil {
+		return nil, fmt.Errorf("failed to load signature DB")
 	}
 
-	compiled := make([]*regexp.Regexp, len(db.Patterns))
-	for i, p := range db.Patterns {
-		re, err := regexp.Compile("(?i)" + p.Pattern)
-		if err != nil {
-			return nil, fmt.Errorf("invalid pattern %q: %w", p.Pattern, err)
+	var compiledRules []compiledRule
+
+	// JSON에 정의된 모든 룰과 그 안의 패턴들을 순회하며 컴파일
+	for _, p := range db.Patterns {
+		var regexps []*regexp.Regexp
+		for _, patStr := range p.Patterns {
+			re, err := regexp.Compile("(?i)" + patStr)
+			if err != nil {
+				return nil, fmt.Errorf("invalid pattern %q in rule %s: %w", patStr, p.RuleName, err)
+			}
+			regexps = append(regexps, re)
 		}
-		compiled[i] = re
+
+		compiledRules = append(compiledRules, compiledRule{
+			Rule:    p,
+			Regexps: regexps,
+		})
 	}
-	return &Matcher{db: db, regexps: compiled}, nil
+	return &Matcher{db: db, rules: compiledRules}, nil
 }
 
 func (m *Matcher) analyze(reader file.LocationReadCloser) (*matchResult, error) {
 	info, err := extractELFInfo(reader)
 	if err != nil || info == nil {
 		return nil, nil
+	}
+
+	// 🛡️ [추가 로직] 명백한 범용 및 오픈소스 파일명은 퀄컴 카탈로거 스캔을 면제함
+	baseName := strings.ToLower(filepath.Base(info.FilePath))
+	baseName = strings.TrimSuffix(baseName, ".ko") 
+	baseName = strings.Split(baseName, ".so")[0]   
+	baseName = strings.TrimPrefix(baseName, "lib") 
+
+	// 우리가 찾아낸 오탐 파일들을 여기에 등록합니다.
+	knownOpenSource := map[string]bool{
+		"iwinfo":        true, // libiwinfo.so, iwinfo.so
+		"ieee1905":      true, // libieee1905.so
+		"pluginmanager": true, // libpluginManager.so
+		"psservice":     true, // libpsService.so
+		"configdb":      true, // libconfigdb.so
+	}
+
+	if knownOpenSource[baseName] {
+		// 퀄컴 카탈로거는 무시하고, 다른 범용 카탈로거(dpkg 등)에게 양보함
+		return nil, nil 
 	}
 
 	result := &matchResult{
@@ -56,11 +102,10 @@ func (m *Matcher) analyze(reader file.LocationReadCloser) (*matchResult, error) 
 
 	// Layer 1: 해시 완전 일치 (신뢰도 1.0)
 	if entry, ok := m.db.HashDB[info.SHA256]; ok {
-		result.Name       = entry.Name
-		result.Version    = entry.Version
+		result.Name = entry.Name
+		result.Version = entry.Version
 		result.Confidence = 1.0
-		result.Evidence   = append(result.Evidence,
-			fmt.Sprintf("hash_match:%s...", info.SHA256[:12]))
+		result.Evidence = append(result.Evidence, fmt.Sprintf("hash_match:%s...", info.SHA256[:12]))
 		result.PURL = buildPURL(result.Name, result.Version)
 		return result, nil
 	}
@@ -68,79 +113,74 @@ func (m *Matcher) analyze(reader file.LocationReadCloser) (*matchResult, error) 
 	// Layer 2: SONAME 매칭 (신뢰도 0.9)
 	if info.SONAME != "" {
 		if entry, ok := m.db.SONAME[info.SONAME]; ok {
-			result.Name       = entry.Name
+			result.Name = entry.Name
 			result.Confidence += 0.9
-			result.Evidence   = append(result.Evidence,
-				fmt.Sprintf("soname_exact:%s", info.SONAME))
+			result.Evidence = append(result.Evidence, fmt.Sprintf("soname_exact:%s", info.SONAME))
 		} else {
 			for pattern, entry := range m.db.SONAME {
 				if matched, _ := filepath.Match(pattern, info.SONAME); matched {
-					result.Name       = entry.Name
+					result.Name = entry.Name
 					result.Confidence += 0.85
-					result.Evidence   = append(result.Evidence,
-						fmt.Sprintf("soname_glob:%s", pattern))
+					result.Evidence = append(result.Evidence, fmt.Sprintf("soname_glob:%s", pattern))
 					break
 				}
 			}
 		}
 	}
 
-	// Layer 3: 문자열 패턴 매칭
+	// Layer 3: 복합 문자열 패턴 (YARA Style Engine)
 	combined := strings.Join(info.Strings, "\n")
-	for i, re := range m.regexps {
-		pat := m.db.Patterns[i]
-		matches := re.FindStringSubmatch(combined)
-		if matches == nil {
-			continue
-		}
-		result.Confidence = math.Min(1.0,
-			result.Confidence+pat.Confidence*0.35)
-		result.Evidence = append(result.Evidence,
-			fmt.Sprintf("str_%s:%s", pat.Field, truncate(matches[0], 40)))
-		if pat.Field == "version" && len(matches) > 1 &&
-			result.Version == "NOASSERTION" {
-			result.Version = matches[1]
-		}
-	}
 
-	// Layer 4: .ko modinfo
-	if author, ok := info.ModInfo["author"]; ok {
-		if strings.Contains(strings.ToLower(author), "qualcomm") {
-			result.Confidence = math.Min(1.0, result.Confidence+0.8)
-			result.Evidence   = append(result.Evidence,
-				fmt.Sprintf("modinfo_author:%s", truncate(author, 40)))
-			if result.Name == "" {
-				if desc, ok := info.ModInfo["description"]; ok {
-					result.Name = desc
-				}
-			}
-			if result.Version == "NOASSERTION" {
-				if ver, ok := info.ModInfo["version"]; ok {
-					result.Version = ver
+	for _, cRule := range m.rules {
+		// 중복 없는 고유한(Distinct) 매칭을 카운트하기 위한 Set
+		distinctMatches := make(map[string]bool)
+		var extractedVersion string
+
+		// 해당 룰에 속한 모든 정규식을 돌리며 매칭 확인
+		for _, re := range cRule.Regexps {
+			// FindAllStringSubmatch로 문서 전체에서 발생하는 모든 매칭을 가져옴
+			allMatches := re.FindAllStringSubmatch(combined, -1)
+			
+			for _, matchGroup := range allMatches {
+				fullMatch := matchGroup[0]
+				distinctMatches[fullMatch] = true
+
+				// 캡처 그룹이 있는 버전 추출용 룰인 경우
+				if cRule.Rule.Field == "version" && len(matchGroup) > 1 && extractedVersion == "" {
+					extractedVersion = matchGroup[1]
 				}
 			}
 		}
-	}
 
-	// Layer 5: 빌드 경로 힌트
-	pathHints := []struct {
-		hint  string
-		score float64
-	}{
-		{"/vendor/qcom/", 0.5},
-		{"/hardware/qcom/", 0.5},
-		{"/proprietary/qcom/", 0.55},
-		{"qcom-opensource", 0.45},
-	}
-	for _, ph := range pathHints {
-		if strings.Contains(info.FilePath, ph.hint) {
-			result.Confidence = math.Min(1.0, result.Confidence+ph.score*0.3)
-			result.Evidence   = append(result.Evidence, "build_path:"+ph.hint)
-			break
+		// 조건 검사: 고유 매칭 횟수가 min_match를 달성했는가?
+		if len(distinctMatches) >= cRule.Rule.MinMatch {
+			// 신뢰도 점수 합산
+			result.Confidence = math.Min(1.0, result.Confidence+(cRule.Rule.Confidence*0.35))
+
+			// Evidence 생성을 위해 추출된 매칭 문자열 일부를 가져옴 (스팸 방지를 위해 최대 3개)
+			var matchedList []string
+			count := 0
+			for k := range distinctMatches {
+				if count >= 3 {
+					matchedList = append(matchedList, "...")
+					break
+				}
+				matchedList = append(matchedList, truncate(k, 25))
+				count++
+			}
+
+			evidenceStr := fmt.Sprintf("rule:%s(%d/%d):[%s]",
+				cRule.Rule.RuleName, len(distinctMatches), cRule.Rule.MinMatch, strings.Join(matchedList, ","))
+			result.Evidence = append(result.Evidence, evidenceStr)
+
+			// 버전 덮어쓰기 로직
+			if cRule.Rule.Field == "version" && extractedVersion != "" && result.Version == "NOASSERTION" {
+				result.Version = extractedVersion
+			}
 		}
 	}
 
-	// 이름 미결정 → 파일명 fallback
+	// 이름 미결정 시 파일명 Fallback
 	if result.Name == "" {
 		base := filepath.Base(info.FilePath)
 		name := base
@@ -165,3 +205,8 @@ func truncate(s string, n int) string {
 	}
 	return s[:n] + "..."
 }
+
+// func buildPURL(name, version string) string {
+// 	// PURL 생성 로직 (생략된 기존 구현체 재사용)
+// 	return fmt.Sprintf("pkg:generic/%s@%s", name, version)
+// }

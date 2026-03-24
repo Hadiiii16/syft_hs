@@ -1,94 +1,372 @@
 [
   {
-    "pattern": "/qsdk/build_dir/[^/]+/[^/]+/qca-",
+    "rule_name": "seed_qca_build_path",
     "field": "build_path",
-    "confidence": 0.9,
-    "note": "QSDK 내 qca-* 패키지 경로만 매칭"
-  },
-  {
-    "pattern": "qca-nss-ecm-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qca-wifi-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qca-nss-clients-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qca-nss-drv-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qca-nss-crypto-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qca-nss-dp-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qca-nss-cfi-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qca-hyfi-bridge-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qca-ovsmgr-g([0-9a-f]+)",
-    "field": "version",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "linux-ipq_ipq[0-9]+",
-    "field": "platform",
-    "confidence": 0.5,
-    "note": "IPQ 플랫폼 확인용 (단독으로는 낮은 신뢰도)"
-  },
-  {
-    "pattern": "QCA_PLC_SON|QCA_MAP_SERVICE|QCA_NON_SON",
-    "field": "supplier_confirm",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "qcawifi_ops|qcawifi_",
-    "field": "supplier_confirm",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "QCA Hy-Fi",
-    "field": "supplier_confirm",
-    "confidence": 0.95
-  },
-  {
-    "pattern": "libqcasonmemdebug",
-    "field": "supplier_confirm",
+    "patterns": [
+      "/qsdk/build_dir/[^/]+/[^/]+/qca-"
+    ],
+    "min_match": 1,
     "confidence": 0.9
   },
   {
-    "pattern": "nl80211_vendor_event_qca",
+    "rule_name": "seed_qca_version_nss",
+    "field": "version",
+    "patterns": [
+      "qca-nss-[a-z]+-g([0-9a-f]+)"
+    ],
+    "min_match": 1,
+    "confidence": 0.95
+  },
+  {
+    "rule_name": "seed_qca_version_wifi",
+    "field": "version",
+    "patterns": [
+      "qca-wifi-g([0-9a-f]+)"
+    ],
+    "min_match": 1,
+    "confidence": 0.95
+  },
+  {
+    "rule_name": "seed_qca_hyfi",
     "field": "supplier_confirm",
+    "patterns": [
+      "QCA Hy-Fi"
+    ],
+    "min_match": 1,
+    "confidence": 0.95
+  },
+  {
+    "rule_name": "seed_qca_ssdk",
+    "field": "supplier_confirm",
+    "patterns": [
+      "qca-ssdk"
+    ],
+    "min_match": 1,
     "confidence": 0.9
   },
   {
-    "pattern": "qca808x_|qca9984|qca9888|qca6390",
+    "rule_name": "seed_chipset_ipq",
     "field": "chipset",
-    "confidence": 0.85
-  },
-  {
-    "pattern": "msm8994|msm8992|msm8996",
-    "field": "chipset",
+    "patterns": [
+      "ipq[0-9]{4}"
+    ],
+    "min_match": 1,
     "confidence": 0.8
+  },
+  {
+    "rule_name": "auto_act_nssmirred",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_ifb_\\w+",
+      "nss_mirred_\\w+"
+    ],
+    "min_match": 6,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from act_nssmirred.ko (Requires 6 matches from 30 known symbols)"
+  },
+  {
+    "rule_name": "auto_ecm",
+    "field": "supplier_confirm",
+    "patterns": [
+      "ecm_db_\\w+",
+      "ecm_nss_\\w+",
+      "ecm_classifier_\\w+"
+    ],
+    "min_match": 135,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from ecm.ko (Requires 135 matches from 678 known symbols)"
+  },
+  {
+    "rule_name": "auto_hyfi_bridging",
+    "field": "supplier_confirm",
+    "patterns": [
+      "hyfi_bridge_\\w+",
+      "hyfi_hatbl_\\w+",
+      "hyfi_psw_\\w+"
+    ],
+    "min_match": 13,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from hyfi-bridging.ko (Requires 13 matches from 65 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_bridge_mgr",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_bridge_\\w+"
+    ],
+    "min_match": 8,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-bridge-mgr.ko (Requires 8 matches from 40 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_cfi_cryptoapi",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_cryptoapi_\\w+",
+      "nss_crypto_\\w+"
+    ],
+    "min_match": 11,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-cfi-cryptoapi.ko (Requires 11 matches from 58 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_cfi_ocf",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_cfi_\\w+"
+    ],
+    "min_match": 3,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-cfi-ocf.ko (Requires 3 matches from 14 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_dp",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_dp_\\w+"
+    ],
+    "min_match": 6,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-dp.ko (Requires 6 matches from 34 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_drv",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_gre_\\w+",
+      "nss_wifi_\\w+",
+      "nss_dynamic_\\w+"
+    ],
+    "min_match": 70,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-drv.ko (Requires 70 matches from 354 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_gre",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_connmgr_\\w+"
+    ],
+    "min_match": 7,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-gre.ko (Requires 7 matches from 35 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_ipsec_klips",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_ipsec_\\w+",
+      "nss_ipsecmgr_\\w+"
+    ],
+    "min_match": 6,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-ipsec-klips.ko (Requires 6 matches from 31 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_macsec",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_macsec_\\w+"
+    ],
+    "min_match": 36,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-macsec.ko (Requires 36 matches from 180 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_match",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_match_\\w+"
+    ],
+    "min_match": 13,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-match.ko (Requires 13 matches from 66 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_mirror",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_mirror_\\w+"
+    ],
+    "min_match": 9,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-mirror.ko (Requires 9 matches from 46 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_ovpn_mgr",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_ovpnmgr_\\w+",
+      "nss_ovpn_\\w+"
+    ],
+    "min_match": 14,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-ovpn-mgr.ko (Requires 14 matches from 72 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_qdisc",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_qdisc_\\w+",
+      "nss_ppe_\\w+",
+      "nss_htb_\\w+"
+    ],
+    "min_match": 26,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-qdisc.ko (Requires 26 matches from 133 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_tun6rd",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_tun6rd_\\w+"
+    ],
+    "min_match": 3,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-tun6rd.ko (Requires 3 matches from 10 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_tunipip6",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_tunipip6_\\w+"
+    ],
+    "min_match": 4,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-tunipip6.ko (Requires 4 matches from 24 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_vlan",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_vlan_\\w+"
+    ],
+    "min_match": 6,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-vlan.ko (Requires 6 matches from 30 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_nss_vxlanmgr",
+    "field": "supplier_confirm",
+    "patterns": [
+      "nss_vxlanmgr_\\w+"
+    ],
+    "min_match": 6,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-nss-vxlanmgr.ko (Requires 6 matches from 30 known symbols)"
+  },
+  {
+    "rule_name": "auto_qca_ssdk",
+    "field": "supplier_confirm",
+    "patterns": [
+      "qca_ar8327_\\w+",
+      "qca_phy_\\w+",
+      "qca_ssdk_\\w+"
+    ],
+    "min_match": 13,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from qca-ssdk.ko (Requires 13 matches from 65 known symbols)"
+  },
+  {
+    "rule_name": "auto_shortcut_fe_drv",
+    "field": "supplier_confirm",
+    "patterns": [
+      "sfe_drv_\\w+"
+    ],
+    "min_match": 3,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from shortcut-fe-drv.ko (Requires 3 matches from 17 known symbols)"
+  },
+  {
+    "rule_name": "auto_shortcut_fe_ipv6",
+    "field": "supplier_confirm",
+    "patterns": [
+      "sfe_ipv6_\\w+"
+    ],
+    "min_match": 3,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from shortcut-fe-ipv6.ko (Requires 3 matches from 13 known symbols)"
+  },
+  {
+    "rule_name": "auto_shortcut_fe",
+    "field": "supplier_confirm",
+    "patterns": [
+      "sfe_ipv4_\\w+"
+    ],
+    "min_match": 3,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from shortcut-fe.ko (Requires 3 matches from 13 known symbols)"
+  },
+  {
+    "rule_name": "auto_umac",
+    "field": "supplier_confirm",
+    "patterns": [
+      "qca_multi_\\w+",
+      "qca_wlan_\\w+"
+    ],
+    "min_match": 10,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from umac.ko (Requires 10 matches from 52 known symbols)"
+  },
+  {
+    "rule_name": "auto_libqmi",
+    "field": "supplier_confirm",
+    "patterns": [
+      "qmi_wds_\\w+",
+      "qmi_qos_\\w+",
+      "qmi_service_\\w+"
+    ],
+    "min_match": 40,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from libqmi.so (Requires 40 matches from 201 known symbols)"
+  },
+  {
+    "rule_name": "auto_libqmi_cci",
+    "field": "supplier_confirm",
+    "patterns": [
+      "qmi_cci_\\w+",
+      "qmi_client_\\w+",
+      "qmi_idl_\\w+"
+    ],
+    "min_match": 12,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from libqmi_cci.so (Requires 12 matches from 62 known symbols)"
+  },
+  {
+    "rule_name": "auto_libqmi_client_qmux",
+    "field": "supplier_confirm",
+    "patterns": [
+      "qmi_qmux_\\w+"
+    ],
+    "min_match": 4,
+    "confidence": 0.85,
+    "source": "mexus",
+    "note": "Mined from libqmi_client_qmux.so (Requires 4 matches from 24 known symbols)"
   }
 ]
