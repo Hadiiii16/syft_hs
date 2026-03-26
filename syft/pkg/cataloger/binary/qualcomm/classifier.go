@@ -7,6 +7,7 @@ import (
 	"debug/elf"
 	"encoding/hex"
 	"io"
+	"regexp"
 	"strings"
 
 	"github.com/anchore/syft/syft/file"
@@ -16,42 +17,38 @@ type elfInfo struct {
 	SHA256   string
 	SONAME   string
 	Strings  []string
-	ModInfo  map[string]string // .ko 전용: modinfo 섹션 key=value
+	ModInfo  map[string]string
 	FilePath string
+	RawBytes []byte // ← signatures.json 바이트 매칭에 필요
 }
 
 // extractELFInfo는 LocationReadCloser에서 ELF 메타데이터를 추출합니다.
-// ELF가 아닌 파일이면 nil, nil을 반환합니다.
 func extractELFInfo(reader file.LocationReadCloser) (*elfInfo, error) {
 	raw, err := io.ReadAll(reader)
 	if err != nil {
 		return nil, err
 	}
 
-	// SHA256 계산
 	sum := sha256.Sum256(raw)
 	info := &elfInfo{
 		SHA256:   hex.EncodeToString(sum[:]),
 		FilePath: reader.Location.RealPath,
 		ModInfo:  make(map[string]string),
+		RawBytes: raw, // 바이트 시그니처 매칭용으로 보존
 	}
 
-	// ELF 파싱 — ELF가 아니면 nil 반환 (에러 아님)
 	ef, err := elf.NewFile(bytes.NewReader(raw))
 	if err != nil {
-		return nil, nil
+		return nil, nil // ELF 아닌 파일 → 조용히 nil
 	}
 	defer ef.Close()
 
-	// SONAME (.so 전용)
 	if libs, _ := ef.DynString(elf.DT_SONAME); len(libs) > 0 {
 		info.SONAME = libs[0]
 	}
 
-	// 출력 가능한 문자열 추출 (minLen=8)
 	info.Strings = extractPrintableStrings(raw, 8)
 
-	// .modinfo 섹션 파싱 (.ko 전용)
 	if sec := ef.Section(".modinfo"); sec != nil {
 		if data, err := sec.Data(); err == nil {
 			info.ModInfo = parseModInfo(data)
@@ -61,12 +58,9 @@ func extractELFInfo(reader file.LocationReadCloser) (*elfInfo, error) {
 	return info, nil
 }
 
-// extractPrintableStrings는 바이너리에서 minLen 이상의
-// 연속된 출력 가능한 ASCII 문자열을 추출합니다.
 func extractPrintableStrings(data []byte, minLen int) []string {
 	var results []string
 	var cur strings.Builder
-
 	for _, b := range data {
 		if b >= 0x20 && b <= 0x7e {
 			cur.WriteByte(b)
@@ -83,7 +77,6 @@ func extractPrintableStrings(data []byte, minLen int) []string {
 	return results
 }
 
-// parseModInfo는 null로 구분된 .modinfo 섹션을 key=value 맵으로 변환합니다.
 func parseModInfo(raw []byte) map[string]string {
 	result := make(map[string]string)
 	for _, entry := range bytes.Split(raw, []byte{0x00}) {
@@ -93,4 +86,23 @@ func parseModInfo(raw []byte) map[string]string {
 		}
 	}
 	return result
+}
+
+// extractChipsetFromVermagic는 modinfo vermagic 필드에서 칩셋을 추출합니다.
+// vermagic 예: "4.4.60 SMP preempt mod_unload modversions aarch64 ipq807x"
+// → "ipq807x" 반환
+func extractChipsetFromVermagic(vermagic string) string {
+	// ipq, qca, msm 패턴 탐색
+	patterns := []string{
+		`ipq[0-9][0-9a-z]+`,
+		`qca[0-9][0-9a-z]+`,
+		`msm[0-9][0-9a-z]+`,
+	}
+	for _, pat := range patterns {
+		re := regexp.MustCompile(`(?i)` + pat)
+		if m := re.FindString(vermagic); m != "" {
+			return strings.ToUpper(m)
+		}
+	}
+	return ""
 }

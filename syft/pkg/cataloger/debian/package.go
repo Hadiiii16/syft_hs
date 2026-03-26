@@ -15,6 +15,7 @@ import (
 	"github.com/anchore/syft/syft/file"
 	"github.com/anchore/syft/syft/linux"
 	"github.com/anchore/syft/syft/pkg"
+	"github.com/anchore/syft/syft/cpe"
 )
 
 const (
@@ -40,7 +41,7 @@ func newDpkgPackage(ctx context.Context, d pkg.DpkgDBEntry, dbLocation file.Loca
 		Metadata:  d,
 	}
 
-	if resolver != nil {
+if resolver != nil {
 		// the current entry only has what may have been listed in the status file, however, there are additional
 		// files that are listed in multiple other locations. We should retrieve them all and merge the file lists
 		// together.
@@ -50,6 +51,75 @@ func newDpkgPackage(ctx context.Context, d pkg.DpkgDBEntry, dbLocation file.Loca
 		addLicenses(ctx, resolver, dbLocation, &p)
 	}
 
+	// 👇 ====== 여기서부터 추가/수정 ====== 👇
+	cpeID := d.CPEID
+
+	// 1. 파일 경로에 "opkg"가 포함되어 있는지 확인하여 opkg 환경인지 판별 (안전장치)
+	isOpkgEnv := strings.Contains(dbLocation.RealPath, "opkg")
+
+	// 2. opkg 환경인 경우에만 패키지 타입을 변경하고 .control 파일 추적 로직 실행
+	if isOpkgEnv {
+		p.Type = pkg.Type("opkg") // 데비안 환경을 건드리지 않고 opkg만 타입 덮어쓰기
+
+		// status 파일이라 CPE-ID가 유실된 경우, 원본 .control 파일을 찾아 직접 읽어오기
+		if cpeID == "" && resolver != nil {
+			parentDir := filepath.Dir(dbLocation.RealPath)
+			// /usr/lib/opkg/info/패키지명.control 경로 추적
+			controlPath := path.Join(parentDir, "info", d.Package+".control")
+			
+			loc := resolver.RelativeFileByPath(dbLocation, controlPath)
+			if loc != nil {
+				if reader, err := resolver.FileContentsByLocation(*loc); err == nil {
+					// 파일을 바이트 단위로 읽어서 CPE-ID 문자열 찾기
+					bytes, _ := io.ReadAll(reader)
+					for _, line := range strings.Split(string(bytes), "\n") {
+						if strings.HasPrefix(line, "CPE-ID:") {
+							cpeID = strings.TrimSpace(strings.TrimPrefix(line, "CPE-ID:"))
+							break
+						}
+					}
+					reader.Close()
+				}
+			}
+		}
+	}
+
+	// 3. 찾아낸 CPE 주입하기
+	if cpeID != "" {
+		parsedCPE, err := cpe.New(cpeID, cpe.DeclaredSource)
+		if err == nil {
+			
+			// 👇 ====== 수정된 버저닝 로직 (Attributes 추가) ====== 👇
+			// 파싱된 CPE의 버전이 비어있거나 와일드카드(*)인 경우, 패키지 버전을 정제해서 채워넣음
+			if parsedCPE.Attributes.Version == "" || parsedCPE.Attributes.Version == "*" || parsedCPE.Attributes.Version == "ANY" {
+				cleanVersion := d.Version
+				
+				// 1. epoch 제거 (예: "1:2.90" -> "2.90")
+				if parts := strings.SplitN(cleanVersion, ":", 2); len(parts) == 2 {
+					cleanVersion = parts[1]
+				}
+				// 2. OpenWrt 리비전 제거 (예: "2.90-r4" -> "2.90")
+				if parts := strings.SplitN(cleanVersion, "-", 2); len(parts) == 2 {
+					cleanVersion = parts[0]
+				}
+				
+				// CPE 객체 하위 Attributes에 깔끔해진 버전 강제 할당
+				parsedCPE.Attributes.Version = cleanVersion
+			}
+			// 👆 ====== 여기까지 ====== 👆
+
+			// 정제된 CPE를 맨 앞에 꽂아넣어 최우선 순위로 만듦
+			p.CPEs = append([]cpe.CPE{parsedCPE}, p.CPEs...)
+		} else {
+			log.Tracef("failed to parse custom CPE-ID for package %s: %v", d.Package, err)
+		}
+		
+		// SBOM 메타데이터 갱신
+		if metadata, ok := p.Metadata.(pkg.DpkgDBEntry); ok {
+			metadata.CPEID = cpeID
+			p.Metadata = metadata
+		}
+	}
 	p.SetID()
 
 	return p

@@ -58,6 +58,9 @@ type DpkgDBEntry struct {
 
 	// Files are the files installed by this package
 	Files []DpkgFileRecord `json:"files"`
+
+	// HS추가 opkg cpe 수정을 위함
+	CPEID         string `json:"cpeId,omitempty"`
 }
 
 // DpkgFileRecord represents a single file attributed to a debian package.
