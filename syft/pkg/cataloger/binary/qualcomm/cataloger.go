@@ -7,7 +7,6 @@ import (
 	"fmt"
 	"regexp"
 	"strings"
-	"sync"
 
 	"github.com/anchore/syft/syft/artifact"
 	"github.com/anchore/syft/syft/cpe"
@@ -18,37 +17,27 @@ import (
 
 const catalogerName = "qualcomm-binary-cataloger"
 
-// qualcommCataloger는 펌웨어 레벨 chipset을 캐싱하는 상태 있는 카탈로거입니다.
-type qualcommCataloger struct {
-	// firmwareChipsets는 펌웨어에서 확실하게 탐지된 chipset 목록입니다.
-	// 한 번 결정되면 모든 컴포넌트에 동일하게 적용됩니다.
-	firmwareChipsets []string
-	detectOnce       sync.Once
-}
-
 func NewCataloger() pkg.Cataloger {
-	c := &qualcommCataloger{}
 	return generic.NewCataloger(catalogerName).
 		WithParserByGlobs(
-			c.parseQualcommBinary,
+			parseQualcommBinary,
 			"**/*.so",
 			"**/*.so.*",
 			"**/*.ko",
-		)
+		).
+		// 모든 파일 스캔 완료 후 플랫폼 컴포넌트 1개 추가
+		// chipset CPE는 개별 컴포넌트가 아닌 플랫폼 컴포넌트에만 포함
+		WithResolvingProcessors(addPlatformComponent)
 }
 
-func (c *qualcommCataloger) parseQualcommBinary(
+// parseQualcommBinary는 단일 바이너리 파일을 분석합니다.
+// chipset CPE는 여기서 추가하지 않고 addPlatformComponent에서 처리합니다.
+func parseQualcommBinary(
 	_ context.Context,
-	resolver file.Resolver,
+	_ file.Resolver,
 	_ *generic.Environment,
 	reader file.LocationReadCloser,
 ) ([]pkg.Package, []artifact.Relationship, error) {
-
-	// 펌웨어 chipset을 최초 1회만 결정
-	c.detectOnce.Do(func() {
-		c.firmwareChipsets = detectFirmwareChipsets(resolver)
-	})
-
 	m, err := newMatcher()
 	if err != nil {
 		return nil, nil, fmt.Errorf("qualcomm matcher init: %w", err)
@@ -59,19 +48,13 @@ func (c *qualcommCataloger) parseQualcommBinary(
 		return nil, nil, nil
 	}
 
-	// 펌웨어 레벨 chipset으로 덮어쓰기
-	// 파일별 chipset 탐지보다 펌웨어 레벨이 항상 우선
-	if len(c.firmwareChipsets) > 0 {
-		result.Chipset = strings.Join(c.firmwareChipsets, ",")
-	}
-
 	p := pkg.Package{
 		Name:      result.Name,
 		Version:   result.Version,
 		Locations: file.NewLocationSet(reader.Location),
 		Type:      resolvePackageType(reader.Location.RealPath),
 		PURL:      result.PURL,
-		CPEs:      buildCPEs(result, c.firmwareChipsets),
+		CPEs:      buildComponentCPEs(result), // 소프트웨어 CPE만
 		Metadata: pkg.QualcommBinaryEntry{
 			Supplier:   "Qualcomm Technologies Inc.",
 			SHA256:     result.SHA256,
@@ -86,6 +69,89 @@ func (c *qualcommCataloger) parseQualcommBinary(
 	return []pkg.Package{p}, nil, nil
 }
 
+// addPlatformComponent는 모든 파일 스캔 완료 후 실행되는 후처리기입니다.
+// 펌웨어에서 탐지된 chipset을 하드웨어 플랫폼 컴포넌트로 SBOM에 추가합니다.
+//
+// 이렇게 하면:
+//   - 플랫폼 CVE가 모든 소프트웨어 컴포넌트에 중복 매핑되는 것을 방지
+//   - CycloneDX 스펙에 맞게 하드웨어/소프트웨어 컴포넌트를 분리
+func addPlatformComponent(
+	_ context.Context,
+	resolver file.Resolver,
+	pkgs []pkg.Package,
+	rels []artifact.Relationship,
+	err error,
+) ([]pkg.Package, []artifact.Relationship, error) {
+	if err != nil {
+		return pkgs, rels, err
+	}
+
+	chipsets := detectFirmwareChipsets(resolver)
+	if len(chipsets) == 0 {
+		return pkgs, rels, nil
+	}
+
+	// chipset별 플랫폼 컴포넌트 생성
+	// 각 chipset을 독립적인 hardware 컴포넌트로 추가
+	for _, chip := range chipsets {
+		platformPkg := buildPlatformPackage(chip)
+		pkgs = append(pkgs, platformPkg)
+	}
+
+	return pkgs, rels, nil
+}
+
+// buildPlatformPackage는 chipset에 대한 하드웨어 플랫폼 컴포넌트를 생성합니다.
+// type: hardware, CPE: cpe:2.3:h:qualcomm:<chip>:-
+func buildPlatformPackage(chip string) pkg.Package {
+	chipLower := strings.ToLower(chip)
+	chipUpper := strings.ToUpper(chip)
+
+	var cpes []cpe.CPE
+	if c, err := cpe.New(fmt.Sprintf(
+		"cpe:2.3:h:qualcomm:%s:-:*:*:*:*:*:*:*",
+		chipLower), cpe.NVDDictionaryLookupSource); err == nil {
+		cpes = append(cpes, c)
+	}
+
+	p := pkg.Package{
+		Name:    chipUpper,
+		Version: "-",
+		Type:    pkg.Type("hardware"),
+		PURL:    fmt.Sprintf("pkg:generic/qualcomm/%s@-", chipLower),
+		CPEs:    cpes,
+		Metadata: pkg.QualcommBinaryEntry{
+			Supplier: "Qualcomm Technologies Inc.",
+			Chipset:  chipUpper,
+			Evidence: []string{"platform_component"},
+		},
+	}
+
+	p.SetID()
+	return p
+}
+
+// buildComponentCPEs는 소프트웨어 컴포넌트 CPE만 생성합니다.
+// chipset CPE는 포함하지 않습니다 (addPlatformComponent에서 별도 처리).
+func buildComponentCPEs(result *matchResult) []cpe.CPE {
+	var cpes []cpe.CPE
+
+	compName := strings.ReplaceAll(result.Name, "-", "_")
+	ver := result.Version
+	if ver == "" {
+		ver = "*"
+	}
+	if c, err := cpe.New(fmt.Sprintf(
+		"cpe:2.3:a:qualcomm:%s:%s:*:*:*:*:*:*:*",
+		compName, ver), cpe.NVDDictionaryLookupSource); err == nil {
+		cpes = append(cpes, c)
+	}
+
+	return cpes
+}
+
+// ── 펌웨어 chipset 탐지 ───────────────────────────────────────────────────
+
 // detectFirmwareChipsets는 펌웨어에서 확실하게 탐지 가능한 chipset만 반환합니다.
 //
 // 탐지 경로:
@@ -97,7 +163,7 @@ func (c *qualcommCataloger) parseQualcommBinary(
 //            + /lib/wifi/qcawificfg80211.sh (stop_wifi_fw)
 //              예: stop_wifi_fw "IPQ5018" → IPQ5018
 //
-// 탐지 불가 → firmware_profile.json으로 수동 입력 필요
+// 탐지 불가 (firmware_profile.json으로 수동 입력 필요):
 //   - PCIe 연결 외장 모뎀 (SDX62 등)
 //   - IPQ 변형 모델 (IPQ8072A vs IPQ8074)
 func detectFirmwareChipsets(resolver file.Resolver) []string {
@@ -110,10 +176,8 @@ func detectFirmwareChipsets(resolver file.Resolver) []string {
 	// ── OpenWrt: /etc/openwrt_release ─────────────────────────────
 	// DISTRIB_TARGET='ipq/ipq807x_64' → IPQ807X
 	if chip := readOpenwrtRelease(resolver); chip != "" {
-		chipsets = append(chipsets, chip)
 		// OpenWrt는 DISTRIB_TARGET이 메인 SoC를 정확히 나타냄
-		// 추가 탐지 없이 반환
-		return chipsets
+		return []string{chip}
 	}
 
 	// ── QTI Linux: /etc/os-release ────────────────────────────────
@@ -134,7 +198,6 @@ func detectFirmwareChipsets(resolver file.Resolver) []string {
 	return chipsets
 }
 
-// readOpenwrtRelease는 /etc/openwrt_release에서 chipset을 추출합니다.
 func readOpenwrtRelease(resolver file.Resolver) string {
 	locations, err := resolver.FilesByPath("/etc/openwrt_release")
 	if err != nil || len(locations) == 0 {
@@ -160,8 +223,6 @@ func readOpenwrtRelease(resolver file.Resolver) string {
 	return ""
 }
 
-// readOsRelease는 /etc/os-release에서 chipset을 추출합니다.
-// QTI Linux: VERSION="LE.UM.6.2.3.r1-06300-SDX65.0" → SDX65
 func readOsRelease(resolver file.Resolver) string {
 	locations, err := resolver.FilesByPath("/etc/os-release")
 	if err != nil || len(locations) == 0 {
@@ -173,7 +234,6 @@ func readOsRelease(resolver file.Resolver) string {
 	}
 	defer reader.Close()
 
-	// SDX, IPQ, QCA, MSM, MDM 계열
 	chipRe := regexp.MustCompile(`(?i)(sdx[0-9][0-9a-z]+|ipq[0-9][0-9a-z]+|qca[0-9][0-9a-z]+|msm[0-9][0-9a-z]+|mdm[0-9][0-9a-z]+)`)
 	scanner := bufio.NewScanner(reader)
 	for scanner.Scan() {
@@ -187,9 +247,6 @@ func readOsRelease(resolver file.Resolver) string {
 	return ""
 }
 
-// readWifiCfgScript는 /lib/wifi/qcawificfg80211.sh에서 WiFi SoC를 추출합니다.
-// stop_wifi_fw "IPQ5018" → IPQ5018
-// 이 스크립트에 명시된 경우에만 탐지 (범용 드라이버 코드는 무시)
 func readWifiCfgScript(resolver file.Resolver) string {
 	locations, err := resolver.FilesByPath("/lib/wifi/qcawificfg80211.sh")
 	if err != nil || len(locations) == 0 {
@@ -202,45 +259,14 @@ func readWifiCfgScript(resolver file.Resolver) string {
 	defer reader.Close()
 
 	// stop_wifi_fw "IPQ5018" 패턴만 탐지
-	// 범용 드라이버의 QCN9000, QCN9100 등은 제외
 	stopFwRe := regexp.MustCompile(`(?i)stop_wifi_fw\s+"(ipq[0-9][0-9a-z]+)"`)
 	scanner := bufio.NewScanner(reader)
 	for scanner.Scan() {
-		line := scanner.Text()
-		if m := stopFwRe.FindStringSubmatch(line); len(m) > 1 {
+		if m := stopFwRe.FindStringSubmatch(scanner.Text()); len(m) > 1 {
 			return strings.ToUpper(m[1])
 		}
 	}
 	return ""
-}
-
-// buildCPEs는 컴포넌트 CPE와 chipset CPE를 생성합니다.
-func buildCPEs(result *matchResult, chipsets []string) []cpe.CPE {
-	var cpes []cpe.CPE
-
-	// 컴포넌트 CPE
-	compName := strings.ReplaceAll(result.Name, "-", "_")
-	ver := result.Version
-	if ver == "" {
-		ver = "*"
-	}
-	if c, err := cpe.New(fmt.Sprintf(
-		"cpe:2.3:a:qualcomm:%s:%s:*:*:*:*:*:*:*",
-		compName, ver), cpe.NVDDictionaryLookupSource); err == nil {
-		cpes = append(cpes, c)
-	}
-
-	// chipset CPE (펌웨어 레벨에서 확실히 탐지된 것만)
-	for _, chip := range chipsets {
-		chipLower := strings.ToLower(chip)
-		if c, err := cpe.New(fmt.Sprintf(
-			"cpe:2.3:h:qualcomm:%s:-:*:*:*:*:*:*:*",
-			chipLower), cpe.NVDDictionaryLookupSource); err == nil {
-			cpes = append(cpes, c)
-		}
-	}
-
-	return cpes
 }
 
 func resolvePackageType(path string) pkg.Type {

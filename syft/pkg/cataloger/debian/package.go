@@ -61,6 +61,22 @@ if resolver != nil {
 	if isOpkgEnv {
 		p.Type = pkg.Type("opkg") // 데비안 환경을 건드리지 않고 opkg만 타입 덮어쓰기
 
+		// opkg 버전 정규화: OpenWrt 리비전(-rN) 제거
+		// 3.2.57-r0 → 3.2.57 (NVD는 upstream 버전 기준으로 CVE 등록)
+		if idx := strings.Index(p.Version, "-r"); idx != -1 {
+			revision := p.Version[idx+2:]
+			allDigits := len(revision) > 0
+			for _, c := range revision {
+				if c < '0' || c > '9' {
+					allDigits = false
+					break
+				}
+			}
+			if allDigits {
+				p.Version = p.Version[:idx]
+			}
+		}
+
 		// status 파일이라 CPE-ID가 유실된 경우, 원본 .control 파일을 찾아 직접 읽어오기
 		if cpeID == "" && resolver != nil {
 			parentDir := filepath.Dir(dbLocation.RealPath)

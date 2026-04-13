@@ -105,6 +105,9 @@ func CreateSBOM(ctx context.Context, src source.Source, cfg *CreateSBOMConfig) (
 	packageCatalogingProgress.SetCompleted()
 	catalogingProgress.SetCompleted()
 
+	// binary-classifier와 opkg 중복 제거
+	deduplicateBinaryAndOpkg(&s)
+
 	return &s, nil
 }
 
@@ -217,4 +220,32 @@ func formatTaskNames(tasks []task.Task) []string {
 	list := set.List()
 	sort.Strings(list)
 	return list
+}
+
+// deduplicateBinaryAndOpkg는 binary-classifier-cataloger와
+// dpkg-db-cataloger(opkg)가 같은 패키지를 중복 탐지한 경우
+// opkg 항목을 제거합니다.
+// opkg 메타데이터(버전, CPE 등)는 binary 항목에 병합됩니다.
+func deduplicateBinaryAndOpkg(s *sbom.SBOM) {
+	// binary-classifier가 탐지한 패키지 수집 (name → package)
+	binaryPkgs := make(map[string]pkg.Package)
+	for p := range s.Artifacts.Packages.Enumerate() {
+		if p.FoundBy == "binary-classifier-cataloger" {
+			binaryPkgs[p.Name] = p
+		}
+	}
+
+	// opkg 패키지 중 binary와 이름이 같은 것 제거
+	var toRemove []artifact.ID
+	for p := range s.Artifacts.Packages.Enumerate() {
+		if string(p.Type) == "opkg" {
+			if _, exists := binaryPkgs[p.Name]; exists {
+				toRemove = append(toRemove, p.ID())
+			}
+		}
+	}
+
+	for _, id := range toRemove {
+		s.Artifacts.Packages.Delete(id)
+	}
 }
