@@ -1,1 +1,116 @@
-{}
+{
+  "libbluetoothdefault.so.0": {
+    "name": "libbluetoothdefault"
+  },
+  "libbt-vendor.so.0": {
+    "name": "libbt-vendor"
+  },
+  "libdataitems.so.1": {
+    "name": "libdataitems"
+  },
+  "libdiag.so.1": {
+    "name": "libdiag"
+  },
+  "libdsi_netctrl.so.0": {
+    "name": "libdsi_netctrl"
+  },
+  "libdsutils.so.1": {
+    "name": "libdsutils"
+  },
+  "libgnss.so": {
+    "name": "libgnss"
+  },
+  "libgps_utils.so.1": {
+    "name": "libgps_utils"
+  },
+  "libizat_client_api.so.1": {
+    "name": "libizat_client_api"
+  },
+  "libizat_core.so.1": {
+    "name": "libizat_core"
+  },
+  "libizatprovider.so.1": {
+    "name": "libizatprovider"
+  },
+  "liblbs_core.so.1": {
+    "name": "liblbs_core"
+  },
+  "libloc_api_v02.so.1": {
+    "name": "libloc_api_v02"
+  },
+  "libloc_api_wds.so.1": {
+    "name": "libloc_api_wds"
+  },
+  "libloc_core.so.1": {
+    "name": "libloc_core"
+  },
+  "liblocdiagiface.so.1": {
+    "name": "liblocdiagiface"
+  },
+  "liblowi_client.so.1": {
+    "name": "liblowi_client"
+  },
+  "libqcbor.so.0": {
+    "name": "libqcbor"
+  },
+  "libqcmap_client.so.1": {
+    "name": "libqcmap_client"
+  },
+  "libqcmap_cm.so.1": {
+    "name": "libqcmap_cm"
+  },
+  "libqcmapipc.so.1": {
+    "name": "libqcmapipc"
+  },
+  "libqcmaputils.so.1": {
+    "name": "libqcmaputils"
+  },
+  "libqdpr.so.1": {
+    "name": "libqdpr"
+  },
+  "libqmi.so.1": {
+    "name": "libqmi"
+  },
+  "libqmi_cci.so.1": {
+    "name": "libqmi_cci"
+  },
+  "libqmi_client_helper.so.1": {
+    "name": "libqmi_client_helper"
+  },
+  "libqmi_client_qmux.so.1": {
+    "name": "libqmi_client_qmux"
+  },
+  "libqmi_common_so.so.1": {
+    "name": "libqmi_common_so"
+  },
+  "libqmi_csi.so.1": {
+    "name": "libqmi_csi"
+  },
+  "libqmi_encdec.so.1": {
+    "name": "libqmi_encdec"
+  },
+  "libqmi_ip.so.1": {
+    "name": "libqmi_ip"
+  },
+  "libqmi_sap.so.1": {
+    "name": "libqmi_sap"
+  },
+  "libqmiidl.so.1": {
+    "name": "libqmiidl"
+  },
+  "libqmiservices.so.1": {
+    "name": "libqmiservices"
+  },
+  "libxtwifi_tile.so.1": {
+    "name": "libxtwifi_tile"
+  },
+  "libxtwifiserver_protocol.so.1": {
+    "name": "libxtwifiserver_protocol"
+  },
+  "libxtwifiserver_protocol_uri_v3.so.1": {
+    "name": "libxtwifiserver_protocol_uri_v3"
+  },
+  "liblowi_client.so": {
+    "name": "liblowi_client"
+  }
+}

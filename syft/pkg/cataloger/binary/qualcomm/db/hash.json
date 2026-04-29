@@ -1,198 +1,3995 @@
 {
+  "a3bbad9348d1afed4fa749bdbc41eee9bebc9c899ac35ee7e941fab3e66f10cb": {
+    "name": "rmt_storage",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "rmt_storage"
+      }
+    ]
+  },
+  "5d9b915685a76d2c9937570b2f6b64893ed3e38de6e524618fd1fbf93458de83": {
+    "name": "LwM2M_Client",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "LwM2M_Client"
+      }
+    ]
+  },
+  "f1d961afc9dd936e7a72a56892b230b17ea95335fa27d4afe0bac0a3671a1739": {
+    "name": "LwM2M_Client_App",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "LwM2M_Client_App"
+      }
+    ]
+  },
+  "d4e1e200c47939f3f5276bf39d18f8479c53050abb309ebec12c26d356f37698": {
+    "name": "PktRspTest",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "PktRspTest"
+      }
+    ]
+  },
+  "6a0d16be20f4c84f6ca0ce4c73d41f1df0d515d2b044436afcd76ec312fab0e9": {
+    "name": "QCMAP_ApInterface",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "QCMAP_ApInterface"
+      }
+    ]
+  },
+  "b9ccc62eba059d8dc7ea76e2bf7e8d08a153355c3a4b8363a6f5301f67eaaf36": {
+    "name": "QCMAP_Bootup",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "QCMAP_Bootup"
+      }
+    ]
+  },
+  "26b259590024cb3dfc98db01cb420992d34179225402b49805e0d3f5d4463184": {
+    "name": "QCMAP_CLI",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "QCMAP_CLI"
+      }
+    ]
+  },
+  "5c833b66b91bfd36bdbe5c0555e5f2a5314a76fa965b3f727b66cb7af089bd66": {
+    "name": "QCMAP_CLI_W",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "QCMAP_CLI_W"
+      }
+    ]
+  },
+  "837a53331ff9c52917262ee0c0e435df9882307af30a99d22d2f2f7d2f168714": {
+    "name": "QCMAP_ConnectionManager",
+    "version": "1.0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "QCMAP_ConnectionManager"
+      }
+    ]
+  },
+  "1ed7c189ea9448a7b2d66b905d43463ea4c37253294a42321aeb95127dc5b54e": {
+    "name": "QCMAP_StaInterface",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "QCMAP_StaInterface"
+      }
+    ]
+  },
+  "cd0fecd64efe87fa3dcc312e436d347b274890375b61674d33c7445d39274546": {
+    "name": "QCMAP_Web_CLIENT",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "QCMAP_Web_CLIENT"
+      }
+    ]
+  },
+  "a2669ce3289e19fa6823683983c6d88a121407157f063f06d650cdb0575b110e": {
+    "name": "adpl",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "adpl"
+      }
+    ]
+  },
+  "3c9e26d90517f80eb2ecaeb2ac8999158a12a3f0355dd1f4023a5f5caf12d7df": {
+    "name": "atfwd_daemon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "atfwd_daemon"
+      }
+    ]
+  },
+  "846d2138cbbd57089812a164607ada926b450ad911d39ba7827875ea39c04384": {
+    "name": "btnvtool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "btnvtool"
+      }
+    ]
+  },
+  "55b6ec4b979845a4d58b7bbc856e257452529046334ef5c904db1814864b621a": {
+    "name": "cpe_device_manager_demo",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "cpe_device_manager_demo"
+      }
+    ]
+  },
+  "d51a2106aef16b4678b0ee53bb58c366179e679d1c4563f204d6453052f26407": {
+    "name": "data_path_opt",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "data_path_opt"
+      }
+    ]
+  },
+  "6bb794adf50a440d1b2854275ab8f7150d372381ad4df9d85b5583fe449cf36b": {
+    "name": "debug-diag",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "debug-diag"
+      }
+    ]
+  },
+  "cb30c66f0d0b7b6187fff842a6cebf577cfc36fd073e90843980cb5adb7156fb": {
+    "name": "diag_callback_sample",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "diag_callback_sample"
+      }
+    ]
+  },
+  "4f6ddaabe7db28461b4eb23ddf4ed9e54a44584d7e9c3e49ca9bb780173bddbd": {
+    "name": "diag_dci_sample",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "diag_dci_sample"
+      }
+    ]
+  },
+  "2298b3c9b06862154ff29076f40baa7c67ab6d7b248b84ab0dcc4e4d8b207284": {
+    "name": "diag_klog",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "diag_klog"
+      }
+    ]
+  },
+  "913ccc1ff23ff75735c480e40908eee498113bffac8849388de3f250e48ceb02": {
+    "name": "diag_mdlog",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "diag_mdlog"
+      }
+    ]
+  },
+  "e5970d7ad6f07aa89ffa09abd0a2bf8d72cd043a69adccd932c6994a9b099105": {
+    "name": "diag_socket_log",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "diag_socket_log"
+      }
+    ]
+  },
+  "9bdb7e41b1cff40d713e8e16105b237e9f41d6586856406de1295fd2d8f1e080": {
+    "name": "diag_uart_log",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "diag_uart_log"
+      }
+    ]
+  },
+  "342eaa06e898536e138e746ea47c9d5ab6712185d945d1d20d1346f825cd4f21": {
+    "name": "diagrebootapp",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "diagrebootapp"
+      }
+    ]
+  },
+  "37afd7b6a70dadd1b08b58fecd1aae5cfe51f25c2508771dbdf06aced81a30cc": {
+    "name": "eMBMs_TunnelingModule",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "eMBMs_TunnelingModule"
+      }
+    ]
+  },
+  "631ced5eea32ddb4c3e6db37e0c74ceffb5ae2e49e7f02bd829ff1d91044e3ee": {
+    "name": "edgnss-daemon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "edgnss-daemon"
+      }
+    ]
+  },
+  "7b110645681a775c273acd670e474e2fd5988870988b3326bacfcb236a24f213": {
+    "name": "ftmdaemon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ftmdaemon"
+      }
+    ]
+  },
+  "90df679a4d0cd7f86b51b85ddeef0404c665e23319bd031ffab89d8d419125b9": {
+    "name": "garden_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "garden_app"
+      }
+    ]
+  },
+  "1a3979bd0ebc6572ebfccd0c8625e78d704da37099ca962267fa6bcbe4417be7": {
+    "name": "hci_qcomm_init",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "hci_qcomm_init"
+      }
+    ]
+  },
+  "3be1a72eee194810394853b5ba315be182f233e85d09f8a15ede22c454d5fcff": {
+    "name": "httpdmgr",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "httpdmgr"
+      }
+    ]
+  },
+  "bd4c1db4f2ee64fafaa16077d6f66b223cdfcfbec50b230c38ab0adbbedc2ae9": {
+    "name": "ipacmdiag",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ipacmdiag"
+      }
+    ]
+  },
+  "4129edc04b2ac5ad6c3e6cfab3fef2ad5f4d3cc0005ae91b1223a7fab0dd2e6e": {
+    "name": "afc",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "afc"
+      }
+    ]
+  },
+  "f3c0ed7f09b080fe9ba67528e0998e109db8432626f47ea57226b9898cb94e32": {
+    "name": "cnsscli",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "cnsscli"
+      }
+    ]
+  },
+  "46f3282761bb495174353add6bd995f672a1d69de871e0a777d34c2d2408cb80": {
+    "name": "cnssdaemon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "cnssdaemon"
+      }
+    ]
+  },
+  "d178f226a9019026ee0b1ed99e75cee852414d281ee5cf4ce052716f116b8fa2": {
+    "name": "keepalived",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "keepalived"
+      }
+    ]
+  },
+  "abfd8b0fd9f4d6138ce1e84c232d05e08b90554afa1067b070807e05870e3dae": {
+    "name": "loc_launcher",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "loc_launcher"
+      }
+    ]
+  },
+  "74b7e2f0dc1f18c7db454bd7f04b808e67ec89dc260303e55d712ee90d337d7f": {
+    "name": "location_client_api_testapp",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "location_client_api_testapp"
+      }
+    ]
+  },
+  "b47b44eb4f47518b6bd0d13f21b11cbfdf461fffa1abccb1959eee400f2676fd": {
+    "name": "location_hal_daemon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "location_hal_daemon"
+      }
+    ]
+  },
+  "7c3dc1ade8ab5899bdaf9616d80a8b21ac214490a9052d865ab5dd6a6814aa42": {
+    "name": "lowi-server",
+    "version": "9.0.0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "lowi-server"
+      }
+    ]
+  },
+  "51572edb825ce235667d28b0bf4af9d9f0d70f998c34846b8a03b7bcc05b5ec6": {
+    "name": "lowi-test",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "lowi-test"
+      }
+    ]
+  },
+  "cdff58a3b2560ce77360a57f26d9cc81e4adeb2896e54f5790d0f970882488a5": {
+    "name": "mbimd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mbimd"
+      }
+    ]
+  },
+  "9af886d9551c1dba12d9a676ecbb3319466c05a86343780efcbc9feb72824ce4": {
+    "name": "msdc_app",
+    "version": "1.0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "msdc_app"
+      }
+    ]
+  },
+  "833992d4e1f186e69e57a3393bafbbe2265846ca07092b94140d5c1b61aa3515": {
+    "name": "myftm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "myftm"
+      }
+    ]
+  },
+  "ed26d2bbe9d27876ca11d76d78219071beee10e5538afcbe154745d21143c2ba": {
+    "name": "netmgrd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "netmgrd"
+      }
+    ]
+  },
+  "ee885b18058e525cece80af859b0357bdefbecfc1839be29a97d1ff1b8d05d6b": {
+    "name": "nmea_test_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "nmea_test_app"
+      }
+    ]
+  },
+  "833e3244199365c8e6919be300169306f99f8da8d1ad386fa1b7f95c9ef6a38e": {
+    "name": "pfotadaemon",
+    "version": "1.0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "pfotadaemon"
+      }
+    ]
+  },
+  "a7d409d1003e697848f4387c8536d85ef0a82d4b67e624c85b1860b2b6cf2d35": {
+    "name": "port_bridge",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "port_bridge"
+      }
+    ]
+  },
+  "41bb1666eb309f07de37fe541b22d843688815c946be68ccde1696cf374b4505": {
+    "name": "qapi_demo_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qapi_demo_app"
+      }
+    ]
+  },
+  "7600f47914e130c517cf40a863570d94eb3a72edb231fdb21f8f6d48b6a75d16": {
+    "name": "qcc-trd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qcc-trd"
+      }
+    ]
+  },
+  "3253bd7bb81820548ce15246033a0cd0cf5e0ffd29da702d97219e594f7736a5": {
+    "name": "qmi_ip_multiclient",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_ip_multiclient"
+      }
+    ]
+  },
+  "65de84f056e12d833e21d487806c4a84cc35c0aec3d8210c66d6ccf99a7761e4": {
+    "name": "qmi_shutdown_modem",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_shutdown_modem"
+      }
+    ]
+  },
+  "801d405634b0a2bd1c6728b3c3470eef1e3b2e92901a9e381f7795e4db09e0d4": {
+    "name": "qmi_simple_ril_test",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_simple_ril_test"
+      }
+    ]
+  },
+  "9b8d823fda73ac6149119d88d6e24b1a9ec711768b891f880a9d2d92b384edde": {
+    "name": "qmi_test_mt_client_init_instance",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_mt_client_init_instance"
+      }
+    ]
+  },
+  "9eab1717e4f00425168ffc4b77d20e971a7b0d3dac1cfc9b8b8c6a5ce5bbc3b5": {
+    "name": "qmi_test_service_clnt_test_0000",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_0000"
+      }
+    ]
+  },
+  "d5c4320982be16fd518b7f449fc0875bd66bdf2e2d17a6279c16f4be25c28992": {
+    "name": "qmi_test_service_clnt_test_0001",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_0001"
+      }
+    ]
+  },
+  "2ed5fdf450b7b07307418d73efc5fc77c0e0a7fbb9716a540f56f61095e30c56": {
+    "name": "qmi_test_service_clnt_test_1000",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_1000"
+      }
+    ]
+  },
+  "d0cd00584e3f6d4eb0d6866acc5f8dad0c846e39885e072579598f5d1700b8c9": {
+    "name": "qmi_test_service_clnt_test_1001",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_1001"
+      }
+    ]
+  },
+  "1e15ad58f2cce126ac51abc0fdebe39f65797a2e4bbd6408833e75448e29f6cf": {
+    "name": "qmi_test_service_clnt_test_2000",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_2000"
+      }
+    ]
+  },
+  "a428ca105985237aa6a815f1ee7fd361b8e8508ddf6ec78637b98cbcce18fcf9": {
+    "name": "qmi_test_service_clnt_test_3000",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_3000"
+      }
+    ]
+  },
+  "968bb9da13c0103ed2ce6e14466369a964200680688e6d2dba8032f0635bb32e": {
+    "name": "qmi_test_service_clnt_test_3001",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_3001"
+      }
+    ]
+  },
+  "5217b857cbd402b30b925a0940013b7fbccb13e8d27f7b61e774f92161a3c0de": {
+    "name": "qmi_test_service_clnt_test_4000",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_4000"
+      }
+    ]
+  },
+  "ffeda571598c781fee09164f2621a5c364fa6a01cbf7f8e92865c9418ef954af": {
+    "name": "qmi_test_service_clnt_test_4001",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_clnt_test_4001"
+      }
+    ]
+  },
+  "1302ac1049b5161487d0aeed7ab1549fb12a0dd6e3532c9a0ed4d6859a46e4f2": {
+    "name": "qmi_test_service_start_svc",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmi_test_service_start_svc"
+      }
+    ]
+  },
+  "7204253cf37f2dccf4d3a52ddf8d92889d4c33175ea345fc529f9601f9a77dd4": {
+    "name": "qmuxbridge",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qmuxbridge"
+      }
+    ]
+  },
+  "4e6b664c68c2461181bbbc12bed37b260deebec6e66619d140df9a49c9de6a1c": {
+    "name": "qti",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qti"
+      }
+    ]
+  },
+  "1f20cdfc4431e515f796b3ea9c6bfae6733ec7e555c21fe88808c98cff591747": {
+    "name": "qti_ppp",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qti_ppp"
+      }
+    ]
+  },
+  "14c833d99d156f0ce15d106d060be2da28d5762e7a08a603269889f289d5f80c": {
+    "name": "qti_socksv5",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qti_socksv5"
+      }
+    ]
+  },
+  "5416be290c9ad696c605f9d89a280e76a7cc02ab48fb7ed1b03acbe3425bbf6e": {
+    "name": "qwes_cli",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qwes_cli"
+      }
+    ]
+  },
+  "b726ea2c7480020c3deea1556c2defb2e7926de64e07a83ceb4fe0f241504659": {
+    "name": "qwesd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qwesd"
+      }
+    ]
+  },
+  "8c59b605579022b0634df6f6eab3f78379b4c595128f48c33e1cad5919cf1262": {
+    "name": "radish",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "radish"
+      }
+    ]
+  },
+  "4aafbdc05aa1f6866e6deb27505e89aca6b87c69cc1d27aa8e7971e2c07db127": {
+    "name": "ssl_demo",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ssl_demo"
+      }
+    ]
+  },
+  "fc3b3406928af225e6cdf8bb653ef31c42272c02a03c9185115fd602f294e79f": {
+    "name": "test_diag",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "test_diag"
+      }
+    ]
+  },
+  "8d992dbde682c7e88283a725c30d2ee864162e5a096aac5130141c747b6c5346": {
+    "name": "wcli",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wcli"
+      }
+    ]
+  },
+  "82af605d984abca0d4e0832596956ed68122172b4bf6560217f1c08621b121e7": {
+    "name": "wcnssfilter",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wcnssfilter"
+      }
+    ]
+  },
+  "7a508c15f23c59c6f77901210720a8639856d72edd6bbca496a7e936adf58e56": {
+    "name": "woorinetapp",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "woorinetapp"
+      }
+    ]
+  },
+  "b7410d0b8fd81efefed3e491962b26ef21cd981d674b93de76c3767fca4b3160": {
+    "name": "xtra-daemon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "xtra-daemon"
+      }
+    ]
+  },
+  "a97eb9e4f99f1ebc3fbdef4c34a97bcd7c678a60c764cf178364cd2bcf55449b": {
+    "name": "xtwifi-client",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "xtwifi-client"
+      }
+    ]
+  },
+  "2ad049d285fa11eeb9f7a47336b3ec5aa5875fb79bf135702675b7789a6c1a71": {
+    "name": "xtwifi-inet-agent",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "xtwifi-inet-agent"
+      }
+    ]
+  },
+  "d642df7351796d7c94f4eed83f33c256a75fd573982c9c61698c3ac112ee2bd7": {
+    "name": "libbatching",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libbatching.so.1.0.0"
+      }
+    ]
+  },
+  "ea77b8167c705f397993f09dcda65aec0f735778e9c9ee242f4365ed7822d299": {
+    "name": "libbluetoothdefault",
+    "version": "1.3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libbluetoothdefault.so.0.0.0"
+      }
+    ]
+  },
+  "8cc0648990a7c745656b835139905ba85e7a95356fae1b97da617e4647cfbb00": {
+    "name": "libbt-vendor",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libbt-vendor.so.0.0.0"
+      }
+    ]
+  },
+  "479b07891009c3ac45dd54ba593b181357c12576206113c9bf5c88aedc1a2e60": {
+    "name": "libconfigdb",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libconfigdb.so.0.0.0"
+      }
+    ]
+  },
+  "f183eb680b0cb9ee4a0c6d7cd57820b07ef0cf8fcf35805d90869f85d06c8638": {
+    "name": "libdataitems",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libdataitems.so.1.0.0"
+      }
+    ]
+  },
+  "de3d822e34429654c02d2e509e96b512c1a63215bbec9f2e596fc7b12bde39c6": {
+    "name": "libdiag",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libdiag.so.1.0.0"
+      }
+    ]
+  },
+  "d28c90870e3ec9a503aa476aa158a175bfe118476e8e787baca22c24ead112fc": {
+    "name": "libds_atctrl",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libds_atctrl.so.0.0.0"
+      }
+    ]
+  },
+  "bcc488cae87f2cc9872a66d8810e73cc5a5ed47f464d546aa9e66228c5ea9350": {
+    "name": "libdsi_netctrl",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libdsi_netctrl.so.0.0.0"
+      }
+    ]
+  },
+  "2056f5bf680ad6f05524ae0cd8bf2e8fa60703c6c3884a7cf910e648bbebf9cc": {
+    "name": "libdsutils",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libdsutils.so.1.0.0"
+      }
+    ]
+  },
+  "66b6705268de26f5ffebc6c8891dc050b1706049330d81ca7c440526d06d53b0": {
+    "name": "libezmeshalg",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libezmeshalg.so"
+      }
+    ]
+  },
+  "c953ee55d72f275e32a5679b547e08c3b04cf40101f459b3dd03792799970dc9": {
+    "name": "libezmeshcore",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libezmeshcore.so"
+      }
+    ]
+  },
+  "47b7a4816fba20a7d9ab0b35bf5eb75d666557e04701755d3ccf6a124ecd8af9": {
+    "name": "libgarden",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libgarden.so"
+      }
+    ]
+  },
+  "813f0d95fe3de89e8eca8848919caea2355a12cd81c359492af5435cf7c12c37": {
+    "name": "libgarden_haltests_e2e",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libgarden_haltests_e2e.so"
+      }
+    ]
+  },
+  "b2bdc8c6a5a1cd75df49af50d7a2b53dc20ff90e1cab0ed32a91c983b3f852a0": {
+    "name": "libgardencasesample",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libgardencasesample.so"
+      }
+    ]
+  },
+  "dec6709ee771cea454fb0adfb1c9da4612d4039e4f3875cc89f6663bf6e546df": {
+    "name": "libgdtap_adapter",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libgdtap_adapter.so.1.0.0"
+      }
+    ]
+  },
+  "f1830f0b7052bb0ff1576f1535f53c2c185e7deeb512c1141ddb45b86dd6b531": {
+    "name": "libgeofencing",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libgeofencing.so.1.0.0"
+      }
+    ]
+  },
+  "21850316b1d9c9538538747d6c572963fd4a5d37efa69801959d164c7a9080cd": {
+    "name": "libgnss",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libgnss.so"
+      }
+    ]
+  },
+  "8fe57d410ba522ecd18f133b1e4593df3d8b35821e988810c2e1a35392babcaa": {
+    "name": "libgps_utils",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libgps_utils.so.1.0.0"
+      }
+    ]
+  },
   "651d8d4631f4b45b96381aa70d51c068bdc8b5333f5ac668e16671f9a52dfcff": {
     "name": "libhyfi-bridge",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libhyfi-bridge.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libhyfi-bridge.so"
+      }
+    ]
   },
   "02417e2cab12fff388993aa41f28fe42ae911951d644024f733962c5b39559cb": {
     "name": "libhyficommon",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libhyficommon.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libhyficommon.so"
+      }
+    ]
   },
   "e94c35661bb7bd624d9594c8c9d0714b27e18a701af72e5c8d09c2f520dc2692": {
     "name": "libieee1905",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libieee1905.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libieee1905.so"
+      }
+    ]
+  },
+  "84bbcd99c53d58fe9de89a1f720afc8ced4b55f0425252ad1b32ac9262deddef": {
+    "name": "libizat_client_api",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libizat_client_api.so.1.0.0"
+      }
+    ]
+  },
+  "7d7d5f47431c58a74c73a5fef9bd1b2ebf63d65d7c4088b07bcda05dbec36720": {
+    "name": "libizat_core",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libizat_core.so.1.0.0"
+      }
+    ]
+  },
+  "13c7d1929a741086183bf21e6feea7ad77a1656cd4bca2edb0e0f2b491f1e0ec": {
+    "name": "libizatprovider",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libizatprovider.so.1.0.0"
+      }
+    ]
+  },
+  "ae376905d7c40049aa0728a6e0037869ef2a7317a3f4192028ff5ae39fae7b4d": {
+    "name": "liblbs_core",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblbs_core.so.1.0.0"
+      }
+    ]
+  },
+  "7fe9de40ce0c5445f93f3d9cdd86123504faf16d4892e7fb5ac2dca6faefd016": {
+    "name": "libloc_api_v02",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libloc_api_v02.so.1.0.0"
+      }
+    ]
+  },
+  "ec5f86f495ccff9ae8f4ec93155be96ed4835b804c0824ac24acb59142e103c5": {
+    "name": "libloc_api_wds",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libloc_api_wds.so.1.0.0"
+      }
+    ]
+  },
+  "998e28b245624af57702387bbb3dafc90d559f5cd80b1581075da70d9988139b": {
+    "name": "libloc_base_util",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libloc_base_util.so.1.0.0"
+      }
+    ]
+  },
+  "478b3e8fc288fb816f086cc9a9eb49ee5df7b4aaac1d19d0ec71a978629c58f1": {
+    "name": "libloc_core",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libloc_core.so.1.0.0"
+      }
+    ]
+  },
+  "ba69351c58a53693474d8a406c7c3f4e8da956f6ba347015208d0511d55c4b11": {
+    "name": "libloc_mq_client",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libloc_mq_client.so.1.0.0"
+      }
+    ]
+  },
+  "18a4c7cca9769a32ed105e511b97cad0c19efcf6a1489adea321832cfb6df016": {
+    "name": "libloc_net_iface",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libloc_net_iface.so.1.0.0"
+      }
+    ]
+  },
+  "fb4bb701f0b3b31e4f4acbc8a3dddb86df589e292f6f5e37a324b4952b5c4193": {
+    "name": "libloc_socket",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libloc_socket.so.1.0.0"
+      }
+    ]
+  },
+  "d571344bb546e5bf6fb544df6f6a0a2f351cf7e5c61393f86e1c1a6ae24801a7": {
+    "name": "liblocation_api",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblocation_api.so.1.0.0"
+      }
+    ]
+  },
+  "221d310be06892685caad49a8594bec4dba8cc6e126f4456a090c57a5564bb17": {
+    "name": "liblocation_api_msg_proto",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblocation_api_msg_proto.so.1.0.0"
+      }
+    ]
+  },
+  "bbfb040ca8aaad5ba8e3a428f17b92931b136488212317985d25b066c99c8a6e": {
+    "name": "liblocation_client_api",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblocation_client_api.so.1.0.0"
+      }
+    ]
+  },
+  "0662bbeeadc54fb069c5933590c2418dc5d9d07b3b61bea64963911efdab0925": {
+    "name": "liblocation_integration_api",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblocation_integration_api.so.1.0.0"
+      }
+    ]
+  },
+  "20dbc667419eb15a4f4f86e0db5ede5a8c23e7c6ff519a4c78cae9b9ac6971eb": {
+    "name": "liblocation_qapi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblocation_qapi.so.1.0.0"
+      }
+    ]
+  },
+  "44b4e741d43f27baf462fbcbeee7e38e2226d9c7e874a98228881e2ac3db2910": {
+    "name": "liblocationservice",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblocationservice.so.1.0.0"
+      }
+    ]
+  },
+  "6ac7dcca1a35b8b9a6cbd16a9aa171abe0411b862eda968354f541b226248c6b": {
+    "name": "liblocationservice_glue",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblocationservice_glue.so.1.0.0"
+      }
+    ]
+  },
+  "8c76cf75b6a5ec57cd0e478c09687ab6ea80945d03a16f94ce6ab42a42a4c6b1": {
+    "name": "liblocdiagiface",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblocdiagiface.so.1.0.0"
+      }
+    ]
+  },
+  "fb4215ab198e7fe3e0c8b9cd08f678b144cac1a94d54aa4ddba5da0300fef502": {
+    "name": "liblowi_client",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "liblowi_client.so.1.0.0"
+      }
+    ]
+  },
+  "1f3b1e03b81a5a44548486a9296533d684d1644ab8ba2cbba696d48d0d376927": {
+    "name": "libnetmgr",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libnetmgr.so.0.0.0"
+      }
+    ]
+  },
+  "e137d83857903c7b3390cd6343c9f6cd41ac3a4bb7d4f0388527bbd2955f7115": {
+    "name": "libnetmgr_common",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libnetmgr_common.so.0.0.0"
+      }
+    ]
+  },
+  "9a2f93158423d20820b0dd6c9f9ecdae2e2d5ac64c1b3c9b1b671fa24e625b1c": {
+    "name": "libnetmgr_nr_fusion",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libnetmgr_nr_fusion.so.0.0.0"
+      }
+    ]
+  },
+  "2527d227a704ea6b953a340bfbaa72c58536c6e449235ad65469d09984e7df50": {
+    "name": "libnetmgr_rmnet_ext",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libnetmgr_rmnet_ext.so.0.0.0"
+      }
+    ]
+  },
+  "e970858f2d6d945f15949be963cf02f6530a38fee0e82e3f7bb4f207e63b453d": {
+    "name": "libnlp_client_api",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libnlp_client_api.so.1.0.0"
+      }
+    ]
+  },
+  "f9a63bdee533c2263556333557cdf88d2f2c374a5c4a6b95f259dc105fa20d6c": {
+    "name": "libpal_net_if",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libpal_net_if.so.1.0.0"
+      }
+    ]
   },
   "53e478163fb3cd8cff62e5eda84eab95d86afabdaf7ecacd97a1c6bdb67c0fbf": {
     "name": "libqca_nl80211_wrapper",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libqca_nl80211_wrapper.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqca_nl80211_wrapper.so"
+      }
+    ]
   },
   "64606940904d6910371ac82b9acaea54326cf6e64ed22d402c4844818679198c": {
     "name": "libqca_tools",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libqca_tools.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqca_tools.so"
+      }
+    ]
   },
   "306545048c0bd042ad87397ab541ce3c194550750e2b572ac139a54ee9289c52": {
     "name": "libqcasonmemdebug",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libqcasonmemdebug.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqcasonmemdebug.so"
+      }
+    ]
+  },
+  "fa7bc36acc2eb15377e66e4f1db91b075959e42dc09236a20414c954344ab5d0": {
+    "name": "libqcbor",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqcbor.so.0.0.0"
+      }
+    ]
+  },
+  "2c4013e9b1117d3867f528446131388ee10222a2871caf0e0e32c9228da3e174": {
+    "name": "libqcmap_client",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqcmap_client.so.1.0.0"
+      }
+    ]
+  },
+  "a61823a610c503f727218c45ef1a153c4b32563ae41676d371cd198d5c1b99b0": {
+    "name": "libqcmap_cm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqcmap_cm.so.1.0.0"
+      }
+    ]
+  },
+  "a5c8483443ef2dcb904c23a342f2cc9dc752321ea3dc06262ce890b01816f6d3": {
+    "name": "libqcmapipc",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqcmapipc.so.1.0.0"
+      }
+    ]
+  },
+  "152e1f13cba5a2f617774bc3969bd5e21d17e67d2a2990b0edb78b6c8df17c89": {
+    "name": "libqcmaputils",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqcmaputils.so.1.0.0"
+      }
+    ]
+  },
+  "ca5719e78764f4c229cac2ff2b19fef8b22f304a7374697255b4254353b77e33": {
+    "name": "libqdi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqdi.so.0.0.0"
+      }
+    ]
+  },
+  "bd7c11094331f6acf23b43fc189b9333d6362c156e36cd7735389878c39914fb": {
+    "name": "libqdp",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqdp.so.0.0.0"
+      }
+    ]
+  },
+  "474de63028a9f2e39bde535daa8b4a086d4e12cd490ca09bb4e92fda2548eee4": {
+    "name": "libqdpr",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqdpr.so.1.0.0"
+      }
+    ]
+  },
+  "055c6314d8286154b578df8acbbc0541215d54c34b60248f6b357fe6a920b0c9": {
+    "name": "libqmi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi.so.1.0.0"
+      }
+    ]
+  },
+  "a48a88334ba924ca38f983c6136b38423b7086f6bd2b616cefca85e9f71174fa": {
+    "name": "libqmi_cci",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi_cci.so.1.0.0"
+      }
+    ]
+  },
+  "8b2aad98e46dec9213d7c75d93cec236c81e1787f1a6390e0c2ae75c48c84fca": {
+    "name": "libqmi_client_helper",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi_client_helper.so.1.0.0"
+      }
+    ]
+  },
+  "6ea887082a682b3f4484540f079b41ffa0bac15b1020171592bfa62fc3263a34": {
+    "name": "libqmi_client_qmux",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi_client_qmux.so.1.0.0"
+      }
+    ]
+  },
+  "f6058869eb279f26f562c79b870099d039065901a06439e1b4a22c68fc544dd2": {
+    "name": "libqmi_common_so",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi_common_so.so.1.0.0"
+      }
+    ]
+  },
+  "4ac211738e47a90d589aa11ac4a4c26dd70b4428f2515914cb34e29e305c810f": {
+    "name": "libqmi_csi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi_csi.so.1.0.0"
+      }
+    ]
+  },
+  "914b169bf1975fe57881937b416c3a022cd77139544d34d3b0981cccc00696d8": {
+    "name": "libqmi_encdec",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi_encdec.so.1.0.0"
+      }
+    ]
+  },
+  "f8deaf9b3c26550e9bf3ae530c67063bd1040371b6bd3972bf4fa348d9faedd0": {
+    "name": "libqmi_ip",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi_ip.so.1.0.0"
+      }
+    ]
+  },
+  "2ca70e83aa37710ca0e8c01e489a976cfd9cb80e5ba1a5f16debb5eb1238e7d7": {
+    "name": "libqmi_sap",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmi_sap.so.1.0.0"
+      }
+    ]
+  },
+  "2e36cea160f5602e13ade36b95fc54f11e6c22b259cce882e1d837b366488d90": {
+    "name": "libqmiidl",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmiidl.so.1.0.0"
+      }
+    ]
+  },
+  "582b2813ba6979003b9298206dd88464858175999859db35b49fd32fa68751cd": {
+    "name": "libqmiservices",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libqmiservices.so.1.0.0"
+      }
+    ]
   },
   "a11e2c45d1cdf1bee196130c373f6c08e41e92b551548b8079d895f154c1fb17": {
     "name": "libstorage",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libstorage.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libstorage.so"
+      }
+    ]
+  },
+  "4175d625b20db53ecc8908b9c6b9fe08552558c89bce0fa1abc7ce6a289bdc15": {
+    "name": "libsys_info_cache",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libsys_info_cache.so.1.0.0"
+      }
+    ]
   },
   "2394ede7e506c363b5c3e728dbc8b397a90ea97c73c7bd2c138ce020aca55564": {
     "name": "libtdService",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libtdService.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libtdService.so"
+      }
+    ]
   },
   "14a89fe98cddd280c5bfbaca2505ab2a3870c06dbef74a625381d987fa56b4d6": {
     "name": "libwifisoncfg",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libwifisoncfg.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwifisoncfg.so"
+      }
+    ]
+  },
+  "33c34a7bce228155ce2d5f6085c4984b141838a039a459e6e34da4838dbbe75c": {
+    "name": "libwlanif",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwlanif.so"
+      }
+    ]
+  },
+  "b1214f8f1cb20626cc4330c4a1978fae8eb2fb6a9a631cc3d4f4207dd82018d1": {
+    "name": "libwnapi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwnapi.so.1.6.0"
+      }
+    ]
+  },
+  "cb0e54c0fce6cd54a0372f42d7a639b15fd07eb0b05ad6864998fa640d322f1f": {
+    "name": "libwoorinet_aa",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_aa.so.0.0.0"
+      }
+    ]
+  },
+  "62ad9ab7e95aec77bc58093f481fe29d531cd469b3df085f9198c1991b50f0d9": {
+    "name": "libwoorinet_at",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_at.so.0.0.0"
+      }
+    ]
+  },
+  "41c504d60ea275b4f4ce24a86b2181286626e72b734236f9fa5be042401b615a": {
+    "name": "libwoorinet_bs",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_bs.so.0.0.0"
+      }
+    ]
+  },
+  "d23baddbd74fc402a03b9d94913e08a3a0964e43c7cc8555b44b91ba10f6d11f": {
+    "name": "libwoorinet_data",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_data.so.0.0.0"
+      }
+    ]
+  },
+  "20e940c6af454dcf3b380fdef3f76731dc986aed2f34698a596d64c527d16100": {
+    "name": "libwoorinet_fm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_fm.so.0.0.0"
+      }
+    ]
+  },
+  "c91322274ab7de5067e60dd5ca8d8cebc930a2977126d2343f2cdfb93b13fa28": {
+    "name": "libwoorinet_fota",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_fota.so.0.0.0"
+      }
+    ]
+  },
+  "a7af5a91caeeb25770f51610a3c04e4e5751b12a09d45dfc59ab4335b97253f2": {
+    "name": "libwoorinet_ld",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_ld.so.0.0.0"
+      }
+    ]
+  },
+  "00153fc7822f218cec9a06283f17668b377b645128ef06f32bd70ca4dad3fc47": {
+    "name": "libwoorinet_mm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_mm.so.0.0.0"
+      }
+    ]
+  },
+  "a29e98e1eb702d49a4d4dab12e69eadc2e05361b3d7a3c450d353bffc29bae2b": {
+    "name": "libwoorinet_nv",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_nv.so.0.0.0"
+      }
+    ]
+  },
+  "43a8218867e370b4aef4c7e1f58e8dd35f7d1f9921a382eaeeb350a9ab014d6c": {
+    "name": "libwoorinet_os",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_os.so.0.0.0"
+      }
+    ]
+  },
+  "ce8eb159bffc3e1b87b45a62d8b2674e2e201f8c953e415766b66d9763830398": {
+    "name": "libwoorinet_pc",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_pc.so.0.0.0"
+      }
+    ]
+  },
+  "070fcd76160e9c7507e43ce0aed52a5e612303262450e6f6046a666cf1208e35": {
+    "name": "libwoorinet_pi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_pi.so.0.0.0"
+      }
+    ]
+  },
+  "2342081013b68876c001f6554919a2b685698c2963a5dcc2c6bbff2ce9ed5ea1": {
+    "name": "libwoorinet_psdm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_psdm.so.0.0.0"
+      }
+    ]
+  },
+  "2f8bd53313a618362c8f438ac6b5ed009000ec15c7573c9aec3ad3bde4a67605": {
+    "name": "libwoorinet_qapi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_qapi.so.0.0.0"
+      }
+    ]
+  },
+  "0bf28e720c455306d7703c85417fa5ddd3ac92e0fbd2baae722684da7f6d3c70": {
+    "name": "libwoorinet_ql",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_ql.so.0.0.0"
+      }
+    ]
+  },
+  "b824697dc991ea09a83be8e3e97b4246f6baa441d45bd54d3664eca7b9a21a2a": {
+    "name": "libwoorinet_ril",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_ril.so.0.0.0"
+      }
+    ]
+  },
+  "4c3e23716b6cc9ae6a311b384391c496632fb4e9d6a29f53f78dc972bbd0e734": {
+    "name": "libwoorinet_sl",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_sl.so.0.0.0"
+      }
+    ]
+  },
+  "1b15e43b790c050db0181a71e2a002a45c734bc13cf3c54237739df6a10d442a": {
+    "name": "libwoorinet_sm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwoorinet_sm.so.0.0.0"
+      }
+    ]
   },
   "407472855424ee5975531cf7eff354fac4680bfacda1c0b49478337a96fb00fb": {
     "name": "libwpa2",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libwpa2.so"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwpa2.so"
+      }
+    ]
   },
   "0b6111d730e8f13714bb373e384fa2d64fa1aca326149276991267ba185cf598": {
     "name": "libwpa_supplicant_8_lib",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "libwpa_supplicant_8_lib.so.0"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libwpa_supplicant_8_lib.so.0.0.0"
+      }
+    ]
+  },
+  "5c5b5a093de28ce353583564a2aef94adb0f3535988bc2709023b40a964febb7": {
+    "name": "libxml",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libxml.so.0.0.0"
+      }
+    ]
+  },
+  "4d39e6d8914f00e644b187fce099a73532cc165b8289e312250026d41d2631d4": {
+    "name": "libxtadapter",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libxtadapter.so.1.0.0"
+      }
+    ]
+  },
+  "ea7f5da625dc478f0d4c23dad24b38e1cd03265f2e843eadd2698e44a30cdfbf": {
+    "name": "libxtwifi_tile",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libxtwifi_tile.so.1.0.0"
+      }
+    ]
+  },
+  "376d21514482fca89c7f5b51ba7e3e73cabf13c26e9ebcbc0af0de153ffa62db": {
+    "name": "libxtwifiserver_protocol",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libxtwifiserver_protocol.so.1.0.0"
+      }
+    ]
+  },
+  "029c7eabb605396dd2b542118864b3a97304705342675428cdddefd8f9e1f633": {
+    "name": "libxtwifiserver_protocol_uri_v3",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "libxtwifiserver_protocol_uri_v3.so.1.0.0"
+      }
+    ]
   },
   "0b4f352e13d6028a1d292e78684fe3e34bde750d583acd6b7d6f763e7391a060": {
     "name": "asf",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "asf.ko"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "asf.ko"
+      }
+    ]
   },
   "67724b49058ca5905448aa9737a42ee7c2076c0527aa362f62e33b532d32d7dc": {
     "name": "ath_pktlog",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "ath_pktlog.ko"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ath_pktlog.ko"
+      }
+    ]
   },
   "4aa97631239a8fec4c8f79a94929fa24e064987779e11a1855b3879f2788c72f": {
     "name": "bluetooth-power",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "bluetooth-power.ko"
-  },
-  "80129401c67dd200ba4caa28845a2fa00225ba7dbe0bc0a7fa0edcd7f4f44311": {
-    "name": "ipq_cnss2",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "ipq_cnss2.ko"
-  },
-  "ca83e68a3baeba6ddb721fe1ec1bbd4d40cb75fb0cc8b0fb7322bb4bb396088c": {
-    "name": "mem_manager",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "mem_manager.ko"
-  },
-  "48036b2d1b3c357fe0e7b226b493fd88abf98d644c0b2f201226edcebcbd45f6": {
-    "name": "qca-macsec",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "qca-macsec.ko"
-  },
-  "5a257a7f97e5bed017796e07a5c8324b9841a2c1bee68d7a603c95d8a27c2307": {
-    "name": "qca_ol",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "qca_ol.ko"
-  },
-  "b38bb2d38bde97ccf8989452b551b8ac4a98bb40070d0677aeb4e7dfdf475a15": {
-    "name": "qca_spectral",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "qca_spectral.ko"
-  },
-  "ddbb75b6b28d4d6a0c45ea0157e0d866be8e07299630814f6dd5e90f3bbbdcc9": {
-    "name": "rawmode_sim",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "rawmode_sim.ko"
-  },
-  "606922f229ee561b919fd62b6793eb6d5988bfa1a9f0fd4270b8531ae592ca4b": {
-    "name": "smart_antenna",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "smart_antenna.ko"
-  },
-  "455958487f6c17904eee44f3551d06bc56b71712c38ecddcebdbf67cc595a405": {
-    "name": "umac",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "umac.ko"
-  },
-  "5cc2b28f1847e2696ce395708d26553632a52b765ccfe3916c08da2b294926e8": {
-    "name": "wifi_3_0",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "wifi_3_0.ko"
-  },
-  "95a72c3f03d118ae42e85889750b9fd2d5431ab424fa8b140a83663579cff963": {
-    "name": "wlan",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "wlan.ko"
-  },
-  "fd3bdd912ff3cc242abbcbd1d3520c69bd6bc42960f7848bf64b8b1d68e98555": {
-    "name": "cnss2",
-    "version": "NOASSERTION",
-    "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "cnss2.ko"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "bluetooth-power.ko"
+      }
+    ]
   },
   "baa2d778ba70c598cb19a791f05a4ad4bf73fbbcb558dc87331409a6baab96fb": {
     "name": "hyfi-bridging",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "hyfi-bridging.ko"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "hyfi-bridging.ko"
+      }
+    ]
   },
-  "4253c617b698770f2e39eba64d87eb0b128ede9c281a75b70b4314ef2e91d245": {
-    "name": "qca-ssdk",
+  "80129401c67dd200ba4caa28845a2fa00225ba7dbe0bc0a7fa0edcd7f4f44311": {
+    "name": "ipq_cnss2",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "qca-ssdk.ko"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ipq_cnss2.ko"
+      }
+    ]
+  },
+  "ca83e68a3baeba6ddb721fe1ec1bbd4d40cb75fb0cc8b0fb7322bb4bb396088c": {
+    "name": "mem_manager",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mem_manager.ko"
+      }
+    ]
   },
   "f04bb8de8af04c4da6a7f60567e607bbebb4b2d54a50127bce7d79f1b3d63a32": {
     "name": "monitor",
     "version": "NOASSERTION",
     "supplier": "Qualcomm Technologies Inc.",
-    "firmware": "p5g_dongle",
-    "file": "monitor.ko"
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "monitor.ko"
+      }
+    ]
+  },
+  "48036b2d1b3c357fe0e7b226b493fd88abf98d644c0b2f201226edcebcbd45f6": {
+    "name": "qca-macsec",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qca-macsec.ko"
+      }
+    ]
+  },
+  "5a257a7f97e5bed017796e07a5c8324b9841a2c1bee68d7a603c95d8a27c2307": {
+    "name": "qca_ol",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qca_ol.ko"
+      }
+    ]
+  },
+  "b38bb2d38bde97ccf8989452b551b8ac4a98bb40070d0677aeb4e7dfdf475a15": {
+    "name": "qca_spectral",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qca_spectral.ko"
+      }
+    ]
+  },
+  "d9996cf3e0a26811a3b3cbd69665781aa9cbf04572b0b0f6368afeb3e75f2709": {
+    "name": "qdf",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qdf.ko"
+      }
+    ]
+  },
+  "ddbb75b6b28d4d6a0c45ea0157e0d866be8e07299630814f6dd5e90f3bbbdcc9": {
+    "name": "rawmode_sim",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "rawmode_sim.ko"
+      }
+    ]
+  },
+  "e214df45a9be268a550a11c2b7ddda6201ee3cfaa83dea5bd2cbb454e19ecc75": {
+    "name": "shortcut-fe-cm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "shortcut-fe-cm.ko"
+      }
+    ]
+  },
+  "021fe92cca9ecf79cb1f9242ef15e486ba92f70ba5ab536a425b3d7f5ff2af61": {
+    "name": "shortcut-fe-ipv6",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "shortcut-fe-ipv6.ko"
+      }
+    ]
+  },
+  "eb57a6a7ed5aae1b90ab4ea0614f47332f6e82afffdd5796b520dbdd6c21c2bd": {
+    "name": "shortcut-fe",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "shortcut-fe.ko"
+      }
+    ]
+  },
+  "606922f229ee561b919fd62b6793eb6d5988bfa1a9f0fd4270b8531ae592ca4b": {
+    "name": "smart_antenna",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "smart_antenna.ko"
+      }
+    ]
+  },
+  "455958487f6c17904eee44f3551d06bc56b71712c38ecddcebdbf67cc595a405": {
+    "name": "umac",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "umac.ko"
+      }
+    ]
+  },
+  "5cc2b28f1847e2696ce395708d26553632a52b765ccfe3916c08da2b294926e8": {
+    "name": "wifi_3_0",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wifi_3_0.ko"
+      }
+    ]
+  },
+  "95a72c3f03d118ae42e85889750b9fd2d5431ab424fa8b140a83663579cff963": {
+    "name": "wlan",
+    "version": "5.2.0.249",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wlan.ko"
+      }
+    ]
+  },
+  "342d7e2c6889710e0928e377e0b08b94a474241464929b1f7b41bf2734bd0ce8": {
+    "name": "mtd_nandbiterrs",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_nandbiterrs.ko"
+      }
+    ]
+  },
+  "7545e8cba795e6bb2caac67d3c7c688e5b0f6a159c36cb7f160ddef6405999a4": {
+    "name": "mtd_nandecctest",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_nandecctest.ko"
+      }
+    ]
+  },
+  "4ef20421af83a9b7368d9e0df615e319c75610737a0940b97223807ae50bc2a1": {
+    "name": "mtd_oobtest",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_oobtest.ko"
+      }
+    ]
+  },
+  "049f848de309709398f611794e160bd81decfe3d35bcc727b8df9d3dfa75ba56": {
+    "name": "mtd_pagetest",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_pagetest.ko"
+      }
+    ]
+  },
+  "c7878e5b060254172e3e62cc0069895919a2589071c15d8a2ad6e6317d239b14": {
+    "name": "mtd_readtest",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_readtest.ko"
+      }
+    ]
+  },
+  "2078dedb5959bd13a603c5087db66872a40c0aacc1cd55dc9ee010eb2d37d271": {
+    "name": "mtd_speedtest",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_speedtest.ko"
+      }
+    ]
+  },
+  "089c65da6d5a01b686296ee6c6daa4ce9882942871cbf0ed92524cdacb9e3f85": {
+    "name": "mtd_stresstest",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_stresstest.ko"
+      }
+    ]
+  },
+  "5d30a5efbc2ea3e9210ce1001e17b96eb2209a26ef366cece6170bc25e651c53": {
+    "name": "mtd_subpagetest",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_subpagetest.ko"
+      }
+    ]
+  },
+  "935f1c3d509162e91e4c54b1650f421317c47ff64c49e1dbaedf7e3da0b21f13": {
+    "name": "mtd_torturetest",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "mtd_torturetest.ko"
+      }
+    ]
+  },
+  "d0d00b057a73bb89d59cb1f3ce1a2fefdeb1132effc726e72bc85e30c5e5af53": {
+    "name": "phylink",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "phylink.ko"
+      }
+    ]
+  },
+  "fd3bdd912ff3cc242abbcbd1d3520c69bd6bc42960f7848bf64b8b1d68e98555": {
+    "name": "cnss2",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "cnss2.ko"
+      }
+    ]
+  },
+  "3c2a6170476eb4dd9ae43117e3a87d214d8ba2573a8ef055ad1267cb00f6b047": {
+    "name": "device_management_service_v01",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "device_management_service_v01.ko"
+      }
+    ]
+  },
+  "f098f5091a8ed274adf752ee902a577611a49d91d9d8bcbb54e290ad3d89ecdf": {
+    "name": "wlan_firmware_service_v01",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wlan_firmware_service_v01.ko"
+      }
+    ]
+  },
+  "4253c617b698770f2e39eba64d87eb0b128ede9c281a75b70b4314ef2e91d245": {
+    "name": "qca-ssdk",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qca-ssdk.ko"
+      }
+    ]
+  },
+  "5028dbf559c5dc0df84f223aefa18b7305123d3636cf2cafefb4b62c2412fbb9": {
+    "name": "spidev",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "spidev.ko"
+      }
+    ]
+  },
+  "35c1559d7c744e5ef77293ed025819194a6eb26cd7ec368afe5d5cb242d75e98": {
+    "name": "ipt_TRIGGER",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ipt_TRIGGER.ko"
+      }
+    ]
+  },
+  "e847aaa0f79d958c19d130af7bd98b9f147061bcdec79196e2177edbdaeb8c26": {
+    "name": "aqc-ioss",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "aqc-ioss.ko"
+      }
+    ]
+  },
+  "b4c8e3cc43c4e3a93f2461a4f8db920c9ac25aab0d5d3325641866993d699763": {
+    "name": "ioss",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ioss.ko"
+      }
+    ]
+  },
+  "bf03d73d819c490757c6b192258ac9226a7b521eb0731847989e277c4bac4e01": {
+    "name": "qps615",
+    "version": "V_01-00-58",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qps615.ko"
+      }
+    ]
+  },
+  "cab688684dc9ef90fe5c32c89ffc47ab3ff83f7800a00dc352c6b02092cee4ff": {
+    "name": "qps615-ioss",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qps615-ioss.ko"
+      }
+    ]
+  },
+  "a7948c2a529856f3f60e320d69d3235ea925d7498fd8097006e10b187b826b89": {
+    "name": "r8125_ioss",
+    "version": "10.0.1",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "r8125_ioss.ko"
+      }
+    ]
+  },
+  "20b98d64c4e403b71e0cf72743050e844ef5800d121fe5b696a2d396593fa89d": {
+    "name": "ezmesh",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ezmesh"
+      }
+    ]
+  },
+  "cbdb342ce595026f9a7e7d710bc7dbf22ead841773361cec149cddf2a4958aa8": {
+    "name": "hyctl",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "hyctl"
+      }
+    ]
+  },
+  "44ad9859fee02f55c70e1fccc6c2b9379929a46f6376178e7ca9d5c8d2a30336": {
+    "name": "acsdbgtool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "acsdbgtool"
+      }
+    ]
+  },
+  "7f1a6dd2bdcc5e0fe3e531c24a4ea10ec124f11347d33e827c272dcf8b4eb6b7": {
+    "name": "apstats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "apstats"
+      }
+    ]
+  },
+  "a17807908e5ee306c2c23ca2051e998a7cbae74c6e2b7e0ca920dfe76be6c94b": {
+    "name": "athkey",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "athkey"
+      }
+    ]
+  },
+  "a55717d98535f719ae3684cb2ba4f766c22056138cd2dc429b027399654231f3": {
+    "name": "athssd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "athssd"
+      }
+    ]
+  },
+  "2d86654a34aa3e010549734f834206ad933a0e0ecf9c01fff317591665bfe31e": {
+    "name": "athstats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "athstats"
+      }
+    ]
+  },
+  "333a80ac16b53b4af0a212b13c2a0ccdaa7a043a640417367ef3a6bb24e1d59b": {
+    "name": "cnss_diag",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "cnss_diag"
+      }
+    ]
+  },
+  "ad1bdecec416049876f25c7854d71c46f9b3177b1f4c05f2de9a19c973665124": {
+    "name": "encrypt_client_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "encrypt_client_app"
+      }
+    ]
+  },
+  "188c34be38f8b2b7c3515075583dc9d613974f0e0105a6012317a6ce5cf70292": {
+    "name": "exttool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "exttool"
+      }
+    ]
+  },
+  "4b6aa82fdb9a09e7480b182493551bc2ae53088a3966702eff1f8de067b51774": {
+    "name": "ftmdaemon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "ftmdaemon"
+      }
+    ]
+  },
+  "92c26328583c84c5baa5df39243ab1b1df9ef62db7211c3ffe2b8fa322091686": {
+    "name": "icm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "icm"
+      }
+    ]
+  },
+  "63f466464595aad73de1d752c63762f8858add3ae8b493d26ddb50d319aec24d": {
+    "name": "pairing_client_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "pairing_client_app"
+      }
+    ]
+  },
+  "8e118de530a9cd823a3681c9b4f6cc8be7f2b00be88e4e4d1468b661a916b9b2": {
+    "name": "peerratestats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "peerratestats"
+      }
+    ]
+  },
+  "82d0caa8db57dde0928dacbe331ba87161739004191903023689aa199491eba3": {
+    "name": "provisioning_test_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "provisioning_test_app"
+      }
+    ]
+  },
+  "707f8ade948f9198ccd4746a2f46c78557cbbf49dfb2dee78a301ee4ce762a58": {
+    "name": "qca_gensock",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qca_gensock"
+      }
+    ]
+  },
+  "c412e188041c4953a67339b4245a77b76f42c54afeae5028f8e785168c2c272c": {
+    "name": "qldtool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "qldtool"
+      }
+    ]
+  },
+  "feeb2ff95c93e5f0e744bc45c515b6a2ce89aab53d9c00ae9d306d7449c4a504": {
+    "name": "radartool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "radartool"
+      }
+    ]
+  },
+  "e4cdca994ab74326e98921ad80e8d60102601757e9b1f6e96485298490a58d2e": {
+    "name": "spectraltool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "spectraltool"
+      }
+    ]
+  },
+  "6e05d95bc45bfc54e07b328c4f993390400ca60148334fde82ed9bbf6db6c174": {
+    "name": "stats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "stats"
+      }
+    ]
+  },
+  "e270f831a1630613abda3c4a555d01326c24cca39893fc6193573435be075264": {
+    "name": "thermaltool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "thermaltool"
+      }
+    ]
+  },
+  "46fa15f0199da8b64dc31ee1b27874ca02bab66e6f1ddb4612185bb2a8781d55": {
+    "name": "wifistats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wifistats"
+      }
+    ]
+  },
+  "c3f5ff7ed59b98989de298f3bc73301882c61331168a017406170f1454f31fb5": {
+    "name": "wifitool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wifitool"
+      }
+    ]
+  },
+  "3feada494b590277b870354754ae536998cc68556e291e5a0a24ba558d4bea76": {
+    "name": "wlanconfig",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wlanconfig"
+      }
+    ]
+  },
+  "2ca238c4c04cb478a7b9024a7a0430dbf57c4fc4b24b4de35f581a93a72000e1": {
+    "name": "wps_enhc",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wps_enhc"
+      }
+    ]
+  },
+  "72fa7743aebff7378d8b53112aa2209ac09fd6b47f1339e970296e1992bb6fe3": {
+    "name": "cnss_diag",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "cnss_diag"
+      }
+    ]
+  },
+  "c04ff49b3d9cdcee9da1005392aca73bc73cd0ad9305db206d5a249e86c9e5af": {
+    "name": "sigma_dut",
+    "version": "1.0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "sigma_dut"
+      }
+    ]
+  },
+  "56f9e3a6f19926422bf7718e61501055bb246472aa13a7317baba15305383f51": {
+    "name": "repacdcli",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "repacdcli"
+      }
+    ]
+  },
+  "7e90f7afbfe0c5e0698b5ac49a7ca03bb1242c07903481bb539035abb4a8dbac": {
+    "name": "wsplcd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "location-fw",
+        "file": "wsplcd"
+      }
+    ]
+  },
+  "903f68564171fab72e495993948a59a9b7cd8b28d9d1cecb21d750d76a1b5477": {
+    "name": "act_nssmirred",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "act_nssmirred.ko"
+      }
+    ]
+  },
+  "c2fa6f70e500e3c1f6ceb77742037b51c4b3fc0da6b6dfbbe4cb8060db5cd919": {
+    "name": "asf",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "asf.ko"
+      }
+    ]
+  },
+  "99f834f4be314688c9e128fc883d8b41da4f095512e3bdf6de9194c8fdb2839b": {
+    "name": "ath_pktlog",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "ath_pktlog.ko"
+      }
+    ]
+  },
+  "25229f71eee61022b7be4ee6395cddab27b8c9ecee42b7c65731ba67214e9ff5": {
+    "name": "diagchar",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "diagchar.ko"
+      }
+    ]
+  },
+  "f66385ebd949082d020cc4ce3ad64ecadee3757043a4a6a50fb9d437b8f0b9ee": {
+    "name": "ecm",
+    "version": "6294dc4",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "ecm.ko"
+      }
+    ]
+  },
+  "475474d197ddcb4c367c13582b5c04b099d163e562d6318d200f5364dcbc5767": {
+    "name": "ecm_ovs",
+    "version": "6294dc4",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "ecm_ovs.ko"
+      }
+    ]
+  },
+  "8fbb9c4dbdf70d842d3e2d8036fb014772b776fe9a07a9f89773f835ae2d0004": {
+    "name": "hyfi-bridging",
+    "version": "ef1fed0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "hyfi-bridging.ko"
+      }
+    ]
+  },
+  "8982e5c15b771cb738ed6aed82d7e83c7129a4b60d9e103aa3ed034b5bf4adce": {
+    "name": "mem_manager",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "mem_manager.ko"
+      }
+    ]
+  },
+  "8d3d327cb3c989bb21e1605b7f2ace3f266095a3a7b6ecde82389af0a5a1d389": {
+    "name": "qca-nss-bridge-mgr",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-bridge-mgr.ko"
+      }
+    ]
+  },
+  "bba83443f305ef5fa1e8fbc8a8476b2809b39acf528ae15c5b8bcc206574211f": {
+    "name": "qca-nss-cfi-cryptoapi",
+    "version": "ee38547",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-cfi-cryptoapi.ko"
+      }
+    ]
+  },
+  "ae24d43bc49650bda684dbcb7d908c82a6f835f1673c9da95e51e3b718f71b8a": {
+    "name": "qca-nss-cfi-ocf",
+    "version": "ee38547",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-cfi-ocf.ko"
+      }
+    ]
+  },
+  "cb3dc5609af4b668ff15db2b01211820a6d7cf18688c6c5504feacfad07928e0": {
+    "name": "qca-nss-crypto-tool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-crypto-tool.ko"
+      }
+    ]
+  },
+  "993e5038bebe49976c34874d2e9dc5f1c4bb32f107f0a326ee4bdbebe304a504": {
+    "name": "qca-nss-crypto",
+    "version": "d84a796",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-crypto.ko"
+      }
+    ]
+  },
+  "679995fdca657a5512dedd01b0cb07fc382151fc6250a1e277097808876c6d58": {
+    "name": "qca-nss-dp",
+    "version": "d861db2",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-dp.ko"
+      }
+    ]
+  },
+  "6c0fee075dcd427c1898be16130bb62bbcb1f57c530efe8200777d0e86941c1b": {
+    "name": "qca-nss-drv",
+    "version": "51233b5",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-drv.ko"
+      }
+    ]
+  },
+  "c36309489a369de4cebbe50959b872436c68471af1c8131285522e3e0f26de23": {
+    "name": "qca-nss-gre-test",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-gre-test.ko"
+      }
+    ]
+  },
+  "57057fd63b4e32fa9c7eeb9049154206daa570a64c2b063c7155b8bb88845ff9": {
+    "name": "qca-nss-gre",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-gre.ko"
+      }
+    ]
+  },
+  "b9b2d092163bbf06a158e537889b5a1a86d644445555945540ec1b4a0f2a8ef7": {
+    "name": "qca-nss-ipsec-klips",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-ipsec-klips.ko"
+      }
+    ]
+  },
+  "5f2f969d71897ffa6cd9c1f67a30f25143ab1ed965c42c3924f6abde469c29e4": {
+    "name": "qca-nss-ipsecmgr",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-ipsecmgr.ko"
+      }
+    ]
+  },
+  "e88487e81851fb42f80783eb6af6313d30c7375d508594dbefc8c58f26105be0": {
+    "name": "qca-nss-l2tpv2",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-l2tpv2.ko"
+      }
+    ]
+  },
+  "7ddadee18f317d05c7a3b1247e5160cfbf7022c5e2543d9e22998415276ee500": {
+    "name": "qca-nss-lag-mgr",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-lag-mgr.ko"
+      }
+    ]
+  },
+  "4c51c8812319af29d31d69c4e19e2653ea92ec3c525c86d2fa1a5436d40713d7": {
+    "name": "qca-nss-macsec",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-macsec.ko"
+      }
+    ]
+  },
+  "f4355e63eb3be144e622ce0d7c3875783e3a8a184c6c38d5dc8cc46ca7bfeb62": {
+    "name": "qca-nss-map-t",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-map-t.ko"
+      }
+    ]
+  },
+  "5cfa874a0855286895a3009cd096aa2ad1d4bb1541d2bea8d3f07b4cd2ec1e16": {
+    "name": "qca-nss-match",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-match.ko"
+      }
+    ]
+  },
+  "af00d72454330dbc8ca9c46cb5db5ec5e954b6477fe758353c52cdd1f8919b6e": {
+    "name": "qca-nss-mirror",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-mirror.ko"
+      }
+    ]
+  },
+  "579376ebba33e8e768bb3bfe8e64c0d9832e35e00b538c9362c87a964c2b18ba": {
+    "name": "qca-nss-mscs",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-mscs.ko"
+      }
+    ]
+  },
+  "a79bbd71b0f32a19143f0c8c7d033d075c2f83e4990e4cc46e645a8ffd7e52e7": {
+    "name": "qca-nss-netlink",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-netlink.ko"
+      }
+    ]
+  },
+  "d16526e1c5719c033382774d6d471f85b4f898f452576745153bc29e9d9e47a7": {
+    "name": "qca-nss-ovpn-link",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-ovpn-link.ko"
+      }
+    ]
+  },
+  "085f9a34de89d5152473d57db3457a740b03e8522f4170eb9fc3723eb75b0510": {
+    "name": "qca-nss-ovpn-mgr",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-ovpn-mgr.ko"
+      }
+    ]
+  },
+  "c5faf5e3843fb2d5ca1dd273448bdc8a72584fe7a1f8b835c50d4c58e7aa64a8": {
+    "name": "qca-nss-pppoe",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-pppoe.ko"
+      }
+    ]
+  },
+  "c6aab791a4c1ccaefc14a3e32834c8a58e20c2b222c9633d94fafc33baeb675d": {
+    "name": "qca-nss-pptp",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-pptp.ko"
+      }
+    ]
+  },
+  "4eb62a6bf6b648f3f5ccd58e93c3333d29665877e7a447bdc4f03761f6d5d04a": {
+    "name": "qca-nss-qdisc",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-qdisc.ko"
+      }
+    ]
+  },
+  "f84c19b4b52231a64172199cebb2cbb4fb385f15ce3f954e757b3b1dbbe23ef7": {
+    "name": "qca-nss-tun6rd",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-tun6rd.ko"
+      }
+    ]
+  },
+  "b90e434a75f2d1ab41d333d953d1c64a2afb6a15e093132154501ccd5d36f25b": {
+    "name": "qca-nss-tunipip6",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-tunipip6.ko"
+      }
+    ]
+  },
+  "cafda8c055601172982ec3ce7a853be5a166bc437e7d602fc77e9e76579ed620": {
+    "name": "qca-nss-vlan",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-vlan.ko"
+      }
+    ]
+  },
+  "28b4fce06fbb99abe6cfa6dc349934fa704a03d002cb893d78e01f4fb8fa5ae4": {
+    "name": "qca-nss-vxlanmgr",
+    "version": "0a3d3f9",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-nss-vxlanmgr.ko"
+      }
+    ]
+  },
+  "065556866740c1548292aa4eb0f94c182e854892a5520f825cc3725ab05aba4d": {
+    "name": "qca-ovsmgr",
+    "version": "5eed1c7",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca-ovsmgr.ko"
+      }
+    ]
+  },
+  "072c8b166ec7c0fa63df4e096b6aa80ffc5937875963cc444f9f1c365ee92dcc": {
+    "name": "qca_ol",
+    "version": "5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca_ol.ko"
+      }
+    ]
+  },
+  "893d744093c72d6e71a8bb1900b1abbaddff7eb99d1c3b2f01216426517e1d0a": {
+    "name": "qca_spectral",
+    "version": "5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca_spectral.ko"
+      }
+    ]
+  },
+  "c4b45d4ba22542af48ecc9521333ae4062a9857c11b89afc2b0d6f6d80877867": {
+    "name": "qdf",
+    "version": "5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qdf.ko"
+      }
+    ]
+  },
+  "90f8cb8f3d080bcfaaa4823908c33fd5d8b231cd66a757dd05b26c067c386d57": {
+    "name": "rawmode_sim",
+    "version": "5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "rawmode_sim.ko"
+      }
+    ]
+  },
+  "daf9d5156fdb94ee270614175ba1a15378ac6564804fbe1b8b4f636f79b126e5": {
+    "name": "smart_antenna",
+    "version": "5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "smart_antenna.ko"
+      }
+    ]
+  },
+  "7700e6e229a54ee84f9f04b6b27868059c00b00ecc15dc2e81ec92124862e811": {
+    "name": "umac",
+    "version": "5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "umac.ko"
+      }
+    ]
+  },
+  "602db33b7912df843d37c9142ae7a6c48e2772ab1c559e7d3ea6ee6c561558d5": {
+    "name": "wifi_2_0",
+    "version": "5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wifi_2_0.ko"
+      }
+    ]
+  },
+  "e79abf2d6efafd60470cf7e3f8f2153d25181249e9211e4038cc48e530a6a29b": {
+    "name": "wifi_3_0",
+    "version": "5da56622b3",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wifi_3_0.ko"
+      }
+    ]
+  },
+  "5415c049afc1bb71504a518cdfffc264db5e7bab06ccbf0070988762f440d7c5": {
+    "name": "cnsscli",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "cnsscli"
+      }
+    ]
+  },
+  "7ded9c129fa0647fcd48d87b6b503d5e2a6ba59868178be3010eed46ff3972ef": {
+    "name": "cnssdaemon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "cnssdaemon"
+      }
+    ]
+  },
+  "2ead3eea5f0aa1f0ce48d72258a5d19d4d3635d6988f0fb6543bfd137cd00715": {
+    "name": "dsi_netctrl_test",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "dsi_netctrl_test"
+      }
+    ]
+  },
+  "8a60e059dd7da932f753b0c318fdbccc087f4282e50397d0fd86b98dd5e86817": {
+    "name": "ipqcm",
+    "version": "1.0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "ipqcm"
+      }
+    ]
+  },
+  "e2ef6fa0a2d86fd056ccc8774a5ebcdd1c7d36b0c8d6a986ed99dd2099e6d1b8": {
+    "name": "netmgrd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "netmgrd"
+      }
+    ]
+  },
+  "924f472b9803f41ad99530a8cbccf232e649d40fc281d47c2660cb1fe22592cf": {
+    "name": "qmuxd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qmuxd"
+      }
+    ]
+  },
+  "46624ab3821eb54a028d0c4fad54de589448b76038e2a9f1b93c8c58dd812727": {
+    "name": "qnicornd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qnicornd"
+      }
+    ]
+  },
+  "aad74f8c1f62a43be6dd077ad0c90fcf17babac2ea7a231b69eab990c71e1dac": {
+    "name": "libconfigdb",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libconfigdb.so"
+      }
+    ]
+  },
+  "3aa11dd6f7e0ffcb8f9f86ba5785c9c20e41f2967fe2c0b2c05608a237625152": {
+    "name": "libdsi_netctrl",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libdsi_netctrl.so"
+      }
+    ]
+  },
+  "36aa53667396a7178da0dd7573539fd3a4cf1ea7d25f1e62c7a1624ccdea5e02": {
+    "name": "libdsutils",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libdsutils.so"
+      }
+    ]
+  },
+  "39b5463cf58a290bdefdc9cdf4445db71688adbc49805ad306e5ee1c4da37e4b": {
+    "name": "libhyfi-bridge",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libhyfi-bridge.so"
+      }
+    ]
+  },
+  "b675401b3f1c53a9d666201a343ea1591aace1bbbc5bbcb768553b6885ecfb1e": {
+    "name": "libhyficommon",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libhyficommon.so"
+      }
+    ]
+  },
+  "8a5b7b2a12dabb57cc617ce71b68066502793f229a5745f32bbb56591800ac8a": {
+    "name": "libieee1905",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libieee1905.so"
+      }
+    ]
+  },
+  "3592c2c9b97fb794582f1b7b0b1606a8d19cd3b2329583e61f653d9b19dfe4e8": {
+    "name": "libiwinfo",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libiwinfo.so"
+      }
+    ]
+  },
+  "12418e6efeb16f8bc871380087f2b4ec82b17eceecbe01901ddf8b21f5e2f5ff": {
+    "name": "liblbcmnlibs",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "liblbcmnlibs.so"
+      }
+    ]
+  },
+  "6299e00b17d4b05d9e7218f530f18199a24bbaca701dae063aa2fa0fb232914e": {
+    "name": "libqcasonmemdebug",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libqcasonmemdebug.so"
+      }
+    ]
+  },
+  "d5d257ad35b84fb58393f715122607d35051ab2a11042688818971048b8f21c0": {
+    "name": "libqdi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libqdi.so"
+      }
+    ]
+  },
+  "848d9b6458907c0cacd4930508344a4dbde92065b985f7f8bf4b85b2b23fa687": {
+    "name": "libqmi",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libqmi.so"
+      }
+    ]
+  },
+  "f13d0531903323648d120784b293a44ec37675c19740f4d7bf5e6f1a66f05a7b": {
+    "name": "libqmi_client_qmux",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libqmi_client_qmux.so"
+      }
+    ]
+  },
+  "7081fa5bc39b6cd4fe0a23ae94b7c798dc98cbf91e2b3cb506eb902edf75fa93": {
+    "name": "libqnicorn_internal",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libqnicorn_internal.so"
+      }
+    ]
+  },
+  "64d3f20aaed0892ae523c6da3402317962edc2fe3a82889ac5dbcdf5661cd13f": {
+    "name": "libstorage",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libstorage.so"
+      }
+    ]
+  },
+  "cc7c42195539d7d11925549dd7ae9811bba032e36c373935f7784b32aa562741": {
+    "name": "libwifisoncfg",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libwifisoncfg.so"
+      }
+    ]
+  },
+  "e18c03dcfc6828e45cf0c8ddfd033a26204c8e6e275d52b765916ef078ed310d": {
+    "name": "libwpa2",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libwpa2.so"
+      }
+    ]
+  },
+  "2c7976528f97cd53a4f1e45462b40479faf012bf25284653f7c9618b1931c28b": {
+    "name": "libxmllib",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "libxmllib.so"
+      }
+    ]
+  },
+  "591a29a7919fe1b3debfedb940220d1225fba3edfc4374b6c82739414737ea78": {
+    "name": "liblowi_client",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "liblowi_client.so"
+      }
+    ]
+  },
+  "3e0c89ef712bdc4335932b33cf7558969cfcb51d2c00f3289cb7cb9de632d908": {
+    "name": "iwinfo",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "iwinfo.so"
+      }
+    ]
+  },
+  "a56a0972b22e3426bcf74881c223683227f0f4f2814c793f23050592311de38a": {
+    "name": "acfg_set_profile",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "acfg_set_profile"
+      }
+    ]
+  },
+  "9caad382ee8d5f8fe5193ece07bc9d1733f99b8c8930b7dbe2ef16e0478b4d7a": {
+    "name": "acfg_tool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "acfg_tool"
+      }
+    ]
+  },
+  "4a931e11bf7c2b3ec9c02d852436206cd4947524624e393cf4bc7301bb7f7647": {
+    "name": "acsdbgtool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "acsdbgtool"
+      }
+    ]
+  },
+  "f85f62cf2d5316c11a4d94c8c4753ce0922815a1cee19e9fdba002276a3b91a4": {
+    "name": "apstats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "apstats"
+      }
+    ]
+  },
+  "7ee1414439a4f8cf933b07bdaff250953c2e81b10ef9b96251a711ffddc84a09": {
+    "name": "athkey",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "athkey"
+      }
+    ]
+  },
+  "072603bf30362fb1951bff953cbdcbd48f1d839078c9d1dfa0a228fdb0cf4ed6": {
+    "name": "athssd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "athssd"
+      }
+    ]
+  },
+  "460039fa586ede8f9cb93dd2896ada192884890ede977e5553db4b57a7d6460b": {
+    "name": "athstats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "athstats"
+      }
+    ]
+  },
+  "560509ae7d89286b8fb37fc62d07b212ec219cca726dba781d9b7885d1bb7afd": {
+    "name": "cnss_diag",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "cnss_diag"
+      }
+    ]
+  },
+  "265ef1fa8114be981411d29641bfb41f6d365d816fad57f50cb1748f6f7afed3": {
+    "name": "diag_mdlog",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "diag_mdlog"
+      }
+    ]
+  },
+  "2ae56a0d9e029142c3a3a42cf5d39ac1e6b60450f939d3ac5ee22d2862065271": {
+    "name": "diag_socket_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "diag_socket_app"
+      }
+    ]
+  },
+  "497eb716283d0367971d070f33a114269872c236a14310f04fe0c95fad8c20d3": {
+    "name": "diag_stress_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "diag_stress_app"
+      }
+    ]
+  },
+  "e44c2eb8165c59dcd4a4fa2cd3c1b6f1bb399f70eec6d738014a9d9d0217b58b": {
+    "name": "exttool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "exttool"
+      }
+    ]
+  },
+  "1910e897dd3987bf2bc42cf916c3de836f0e4fc862b53388dbd15a9091f6aa00": {
+    "name": "ftm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "ftm"
+      }
+    ]
+  },
+  "a21c2e91c71d1bce512f2f3e0a19c99d5210ec0a35b97d84f47eac8d02d4dafe": {
+    "name": "hostapd-macsec",
+    "version": "1.0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "hostapd-macsec"
+      }
+    ]
+  },
+  "cf460b2551fa4756bc6f5ecd7ac572e319a81c4dd11a4ac889cddae3b2699ce4": {
+    "name": "hyctl",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "hyctl"
+      }
+    ]
+  },
+  "e085872f1abf9c511a738e85f4e5fe83370caab1cb23d0e79f6ad493e356c127": {
+    "name": "hyd-map",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "hyd-map"
+      }
+    ]
+  },
+  "4265dc511ea22a31f84dbe9c39f60051a4d3835a58d861257de38b148edec634": {
+    "name": "hyd-son",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "hyd-son"
+      }
+    ]
+  },
+  "32d653a4e44c7f94897797aa75c616bf5125622ef0cb6b8d6c8728237e93305a": {
+    "name": "icm",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "icm"
+      }
+    ]
+  },
+  "a2e5048c10a1c122c74ba06421124e3e718bceaeee05bf551a7cf2f26ccd1017": {
+    "name": "iface-mgr",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "iface-mgr"
+      }
+    ]
+  },
+  "78bacfe915fcff1c1161e4b0642314b0ba0aa425b644d11209642cd87000157e": {
+    "name": "lbd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "lbd"
+      }
+    ]
+  },
+  "73b1dfd0f03a6e57bec07116120f06977927487f5e7119fe112b3694f418d2fd": {
+    "name": "lowi-server",
+    "version": "8.6.0",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "lowi-server"
+      }
+    ]
+  },
+  "ad78c265dac111d9a39690be2220da193d52c228c25d8834033320e347a427a9": {
+    "name": "lowi-test",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "lowi-test"
+      }
+    ]
+  },
+  "cc71f4c7a997f672fb10716664a939243d9420a363d55dcc3c4a9926b8febc1f": {
+    "name": "mesh_app",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "mesh_app"
+      }
+    ]
+  },
+  "00eeb60f7c9b38ef8d6bd5db598625589247ab567f03689a707f22526d6faa89": {
+    "name": "peerratestats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "peerratestats"
+      }
+    ]
+  },
+  "ecf2d0492815b675b6cebebad379be60eed9ca1192012cfabce52d43b5cc8951": {
+    "name": "qca_event_sample",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca_event_sample"
+      }
+    ]
+  },
+  "2a96e3e8d22726f689838ff3d174b423759e7277a6d7ffd232cb6e08bc041a36": {
+    "name": "qca_genlevent_sample",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca_genlevent_sample"
+      }
+    ]
+  },
+  "f9206fb590e3b69c52a4b93b292c3e317f4e42765be5cbdf59f07d797d34bc29": {
+    "name": "qca_listen_port",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qca_listen_port"
+      }
+    ]
+  },
+  "03d22b5be5dd53f80df13a5cb6212c26fd4d031c7db32caae0bac8c4a556d4d3": {
+    "name": "qld_server",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qld_server"
+      }
+    ]
+  },
+  "ec5bf1f187454f5cdd0ceca0c3218d6e3bfd125220992899486ca2f55d3d5054": {
+    "name": "qldtool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "qldtool"
+      }
+    ]
+  },
+  "3503ef5cb7a0c93bf317ac13854551bd0f7804208543e21a61b81e50393d7e1a": {
+    "name": "radartool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "radartool"
+      }
+    ]
+  },
+  "6283efd79e03ad5e3c3c98027c3fee2320536284de101ae3e228243999a1b667": {
+    "name": "registerReboot",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "registerReboot"
+      }
+    ]
+  },
+  "87ae44f32cf6db8f650dd7dcd1c23b3e37392aad2441b282e6738ac38e2b4bed": {
+    "name": "repacdcli",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "repacdcli"
+      }
+    ]
+  },
+  "8462f49551d64bdbf04b1f35d28263b39ea19207ae93d14988b66dfcfb47fa9b": {
+    "name": "son_cli",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "son_cli"
+      }
+    ]
+  },
+  "8b279ec4d06bdc7c151992c463a258f06312fcb622a6075df61576679a008069": {
+    "name": "spectraltool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "spectraltool"
+      }
+    ]
+  },
+  "7fa14218a8014e6164dff0b44bf1f03fe78789468ec503feb379f70fa1c63542": {
+    "name": "ssidsteering",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "ssidsteering"
+      }
+    ]
+  },
+  "54f178f8a9eb3761dc5da35f77aa4b121128b1b1f7a60701785a7064bc2a671a": {
+    "name": "thermald",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "thermald"
+      }
+    ]
+  },
+  "547c55d80475c6ee7e05c47e756242ca2153fadbc6b688232988dd5746507ce3": {
+    "name": "thermaltool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "thermaltool"
+      }
+    ]
+  },
+  "5e1c6900129c9837b5e4f9d7662cb3d15cfe0de9c0f5cc8158f09472e7aa163c": {
+    "name": "wifistats",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wifistats"
+      }
+    ]
+  },
+  "9eb511e73ead2e9876bc152a5fe5603e3b1a7e27c68b6608aa4f66b9109c56bb": {
+    "name": "wifitool",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wifitool"
+      }
+    ]
+  },
+  "473987d68d68c829dc61004caca56729efde8b0a6cbe7acd7d4d9bf2fffec98d": {
+    "name": "wlanconfig",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wlanconfig"
+      }
+    ]
+  },
+  "59f2c745f715360a1e720d76ce1a239eb3b846433452455694897a837fcd8aba": {
+    "name": "wpa_supplicant-macsec",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wpa_supplicant-macsec"
+      }
+    ]
+  },
+  "a4258b697bacc6124bab873585dbda977a8dc33dc1c191f333b74341a51ea0f1": {
+    "name": "wps_enhc",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wps_enhc"
+      }
+    ]
+  },
+  "af483fb364136704df05bb3d55b24363d202bfad590b6245c6a4bb542c3de6b6": {
+    "name": "wrapd",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wrapd"
+      }
+    ]
+  },
+  "2922c738c049ada896a357d5029426c6399432f18aa534711bd6a11a44e987c5": {
+    "name": "wsplcd-map",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wsplcd-map"
+      }
+    ]
+  },
+  "d41ee24934b853124df6ad41a4be7f91a4ad31ee32f491750a321e2ee54efb5e": {
+    "name": "wsplcd-son",
+    "version": "NOASSERTION",
+    "supplier": "Qualcomm Technologies Inc.",
+    "occurrences": [
+      {
+        "firmware": "ipq807x-fw",
+        "file": "wsplcd-son"
+      }
+    ]
   }
 }

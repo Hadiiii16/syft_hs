@@ -15,59 +15,91 @@
     "confidence": 0.95
   },
   {
+    "pattern": "QCA_(PLC_SON|MAP_SERVICE|WHC)",
+    "field": "supplier_confirm",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "qc_loc_fw::",
+    "field": "supplier_confirm",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "libqcril\\b|libril-qc",
+    "field": "supplier_confirm",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "\\b(qmuxd|netmgrd|cnss[-_]?daemon|loc_launcher)\\b",
+    "field": "supplier_confirm",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "_ZN\\d+(qc_loc_fw|Qcom|QCom|Qti|QTI)\\d",
+    "field": "supplier_confirm",
+    "confidence": 0.95
+  },
+  {
+    "pattern": "_ZN\\d+qc_loc_fw\\d",
+    "field": "supplier_confirm",
+    "confidence": 0.95,
+    "source": "ipq807x-fw",
+    "note": "new sym from lowi-test"
+  },
+  {
     "pattern": "qca-nss-clients-g([0-9a-f]+)",
     "field": "version",
     "confidence": 0.95,
-    "source": "mexus",
+    "source": "ipq807x-fw",
     "note": "auto from qca-nss-vxlanmgr.ko: qca-nss-clients-g0a3d3f9"
   },
   {
     "pattern": "qca-nss-ecm-g([0-9a-f]+)",
     "field": "version",
     "confidence": 0.95,
-    "source": "mexus",
+    "source": "ipq807x-fw",
     "note": "auto from ecm_ovs.ko: qca-nss-ecm-g6294dc4"
   },
   {
     "pattern": "qca-hyfi-bridge-g([0-9a-f]+)",
     "field": "version",
     "confidence": 0.95,
-    "source": "mexus",
+    "source": "ipq807x-fw",
     "note": "auto from hyfi-bridging.ko: qca-hyfi-bridge-gef1fed0"
   },
   {
     "pattern": "qca-nss-cfi-g([0-9a-f]+)",
     "field": "version",
     "confidence": 0.95,
-    "source": "mexus",
+    "source": "ipq807x-fw",
     "note": "auto from qca-nss-cfi-ocf.ko: qca-nss-cfi-gee38547"
   },
   {
     "pattern": "qca-nss-crypto-g([0-9a-f]+)",
     "field": "version",
     "confidence": 0.95,
-    "source": "mexus",
+    "source": "ipq807x-fw",
     "note": "auto from qca-nss-crypto.ko: qca-nss-crypto-gd84a796"
   },
   {
     "pattern": "qca-nss-dp-g([0-9a-f]+)",
     "field": "version",
     "confidence": 0.95,
-    "source": "mexus",
+    "source": "ipq807x-fw",
     "note": "auto from qca-nss-dp.ko: qca-nss-dp-gd861db2"
   },
   {
     "pattern": "qca-nss-drv-g([0-9a-f]+)",
     "field": "version",
     "confidence": 0.95,
-    "source": "mexus",
+    "source": "ipq807x-fw",
     "note": "auto from qca-nss-drv.ko: qca-nss-drv-g51233b5"
   },
   {
     "pattern": "qca-ovsmgr-g([0-9a-f]+)",
     "field": "version",
     "confidence": 0.95,
-    "source": "mexus",
+    "source": "ipq807x-fw",
     "note": "auto from qca-ovsmgr.ko: qca-ovsmgr-g5eed1c7"
   },
   {
@@ -76,17 +108,22 @@
     "confidence": 0.9
   },
   {
+    "pattern": "qca-(?:hyfi|son|whc)-[a-z-]*g([0-9a-f]+)",
+    "field": "version",
+    "confidence": 0.9
+  },
+  {
     "pattern": "qca-ssdk",
     "field": "supplier_confirm",
     "confidence": 0.9
   },
   {
-    "pattern": "qcawifi_\\w+",
+    "pattern": "qcawifi_[a-z_]+",
     "field": "supplier_confirm",
     "confidence": 0.9
   },
   {
-    "pattern": "qca808x_\\w+",
+    "pattern": "qca808x_[a-z_]+",
     "field": "supplier_confirm",
     "confidence": 0.9
   },
@@ -101,44 +138,166 @@
     "confidence": 0.9
   },
   {
-    "pattern": "qca808x_[a-z_]+",
+    "pattern": "libloc_(api|core|ds|util)",
     "field": "supplier_confirm",
-    "confidence": 0.9,
-    "source": "mexus",
-    "note": "new symbol from qca-nss-macsec.ko"
+    "confidence": 0.9
   },
   {
-    "pattern": "qcawifi_[a-z_]+",
+    "pattern": "libizat",
     "field": "supplier_confirm",
-    "confidence": 0.9,
-    "source": "mexus",
-    "note": "new symbol from iwinfo.so"
+    "confidence": 0.9
   },
   {
-    "pattern": "QCA_[A-Z_]{4,}",
+    "pattern": "liblowi",
     "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "libxtwifi",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "libgps_utils|libgnss\\b",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "liblbs_(core|service)",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "qmi_(loc|nas|wds|dms|wda|qos|cat|pds|csi)_",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "libqmi_(client|encdec|services)",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "libdsutils\\b|libdiag\\b|libdsi_netctrl",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "qcom_bt_|bt_qsoc_",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "wlanifBSteer\\w+|bandmon[A-Z]\\w+",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "libezmesh\\w*|libwhc_\\w+|repacd_",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "qsap_(get|set|read|write|init)",
+    "field": "supplier_confirm",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "qca[0-9]{4}[a-z]?",
+    "field": "chipset",
+    "confidence": 0.9
+  },
+  {
+    "pattern": "wlanifBSteer\\w+",
+    "field": "supplier_confirm",
+    "confidence": 0.9,
+    "source": "ipq807x-fw",
+    "note": "new sym from lbd"
+  },
+  {
+    "pattern": "/qti-(?:le|linux|linux-le)/[^/]+/",
+    "field": "build_path",
     "confidence": 0.85
   },
   {
-    "pattern": "qca[0-9]{4}",
-    "field": "chipset",
+    "pattern": "AU_LINUX_ANDROID_[A-Z0-9_.\\-]+",
+    "field": "build_path",
+    "confidence": 0.85
+  },
+  {
+    "pattern": "LE\\.UM\\.[0-9]+\\.[0-9]+\\.[0-9]+(?:r[0-9]+)?(?:-[0-9]+)?(?:-[A-Z0-9]+)?",
+    "field": "version",
     "confidence": 0.85
   },
   {
     "pattern": "QCA_[A-Z][A-Z0-9_]{3,}",
     "field": "supplier_confirm",
-    "confidence": 0.85,
-    "source": "mexus",
-    "note": "new symbol from libwifisoncfg.so"
+    "confidence": 0.85
   },
   {
-    "pattern": "ipq[0-9]{4}",
+    "pattern": "GpsLocation\\b|UlpLocation\\b|IzatLocation\\b",
+    "field": "supplier_confirm",
+    "confidence": 0.85
+  },
+  {
+    "pattern": "libbt-vendor\\b|bluetooth\\.default\\b",
+    "field": "supplier_confirm",
+    "confidence": 0.85
+  },
+  {
+    "pattern": "libdataitems\\b|DataItemSubscription",
+    "field": "supplier_confirm",
+    "confidence": 0.85
+  },
+  {
+    "pattern": "ipq[0-9]{4}[a-z]?",
+    "field": "chipset",
+    "confidence": 0.85
+  },
+  {
+    "pattern": "sdx[0-9]{2}[a-z]?",
+    "field": "chipset",
+    "confidence": 0.85
+  },
+  {
+    "pattern": "qca[0-9]{4}",
+    "field": "chipset",
+    "confidence": 0.85,
+    "source": "ipq807x-fw",
+    "note": "new sym from wifi_2_0.ko"
+  },
+  {
+    "pattern": "bandmon[A-Z][a-zA-Z]+",
+    "field": "supplier_confirm",
+    "confidence": 0.85,
+    "source": "ipq807x-fw",
+    "note": "new sym from lbd"
+  },
+  {
+    "pattern": "sdm[0-9]{3}",
     "field": "chipset",
     "confidence": 0.8
+  },
+  {
+    "pattern": "mdm[0-9]{4}",
+    "field": "chipset",
+    "confidence": 0.8
+  },
+  {
+    "pattern": "sdx[0-9]{2}",
+    "field": "chipset",
+    "confidence": 0.8,
+    "source": "location-fw",
+    "note": "new sym from provisioning_test_app"
   },
   {
     "pattern": "msm[89][0-9]{3}",
     "field": "chipset",
     "confidence": 0.75
+  },
+  {
+    "pattern": "snapdragon \\w+",
+    "field": "chipset",
+    "confidence": 0.7
   }
 ]
